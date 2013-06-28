@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		556BB016177E04D000F9ED05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB015177E04D000F9ED05 /* Foundation.framework */; };
+		556BB01B177E04D000F9ED05 /* Parse_RACExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 556BB01A177E04D000F9ED05 /* Parse_RACExtensions.h */; };
+		556BB01D177E04D000F9ED05 /* Parse_RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB01C177E04D000F9ED05 /* Parse_RACExtensions.m */; };
+		556BB025177E04D000F9ED05 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB024177E04D000F9ED05 /* SenTestingKit.framework */; };
+		556BB027177E04D000F9ED05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB026177E04D000F9ED05 /* UIKit.framework */; };
+		556BB028177E04D000F9ED05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB015177E04D000F9ED05 /* Foundation.framework */; };
+		556BB02B177E04D000F9ED05 /* libParse-RACExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB012177E04D000F9ED05 /* libParse-RACExtensions.a */; };
+		556BB031177E04D000F9ED05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556BB02F177E04D000F9ED05 /* InfoPlist.strings */; };
+		556BB034177E04D000F9ED05 /* Parse_RACExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB033177E04D000F9ED05 /* Parse_RACExtensionsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		556BB029177E04D000F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB00A177E04D000F9ED05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 556BB011177E04D000F9ED05;
+			remoteInfo = "Parse-RACExtensions";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		556BB010177E04D000F9ED05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				556BB01B177E04D000F9ED05 /* Parse_RACExtensions.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		556BB012177E04D000F9ED05 /* libParse-RACExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libParse-RACExtensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556BB015177E04D000F9ED05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		556BB019177E04D000F9ED05 /* Parse-RACExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Parse-RACExtensions-Prefix.pch"; sourceTree = "<group>"; };
+		556BB01A177E04D000F9ED05 /* Parse_RACExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parse_RACExtensions.h; sourceTree = "<group>"; };
+		556BB01C177E04D000F9ED05 /* Parse_RACExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_RACExtensions.m; sourceTree = "<group>"; };
+		556BB023177E04D000F9ED05 /* Parse-RACExtensionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parse-RACExtensionsTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		556BB024177E04D000F9ED05 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		556BB026177E04D000F9ED05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		556BB02E177E04D000F9ED05 /* Parse-RACExtensionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Parse-RACExtensionsTests-Info.plist"; sourceTree = "<group>"; };
+		556BB030177E04D000F9ED05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		556BB032177E04D000F9ED05 /* Parse_RACExtensionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parse_RACExtensionsTests.h; sourceTree = "<group>"; };
+		556BB033177E04D000F9ED05 /* Parse_RACExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_RACExtensionsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		556BB00F177E04D000F9ED05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556BB016177E04D000F9ED05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556BB01F177E04D000F9ED05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556BB025177E04D000F9ED05 /* SenTestingKit.framework in Frameworks */,
+				556BB027177E04D000F9ED05 /* UIKit.framework in Frameworks */,
+				556BB028177E04D000F9ED05 /* Foundation.framework in Frameworks */,
+				556BB02B177E04D000F9ED05 /* libParse-RACExtensions.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		556BB009177E04D000F9ED05 = {
+			isa = PBXGroup;
+			children = (
+				556BB017177E04D000F9ED05 /* Parse-RACExtensions */,
+				556BB02C177E04D000F9ED05 /* Parse-RACExtensionsTests */,
+				556BB014177E04D000F9ED05 /* Frameworks */,
+				556BB013177E04D000F9ED05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		556BB013177E04D000F9ED05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556BB012177E04D000F9ED05 /* libParse-RACExtensions.a */,
+				556BB023177E04D000F9ED05 /* Parse-RACExtensionsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		556BB014177E04D000F9ED05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				556BB015177E04D000F9ED05 /* Foundation.framework */,
+				556BB024177E04D000F9ED05 /* SenTestingKit.framework */,
+				556BB026177E04D000F9ED05 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		556BB017177E04D000F9ED05 /* Parse-RACExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				556BB01A177E04D000F9ED05 /* Parse_RACExtensions.h */,
+				556BB01C177E04D000F9ED05 /* Parse_RACExtensions.m */,
+				556BB018177E04D000F9ED05 /* Supporting Files */,
+			);
+			path = "Parse-RACExtensions";
+			sourceTree = "<group>";
+		};
+		556BB018177E04D000F9ED05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				556BB019177E04D000F9ED05 /* Parse-RACExtensions-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		556BB02C177E04D000F9ED05 /* Parse-RACExtensionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				556BB032177E04D000F9ED05 /* Parse_RACExtensionsTests.h */,
+				556BB033177E04D000F9ED05 /* Parse_RACExtensionsTests.m */,
+				556BB02D177E04D000F9ED05 /* Supporting Files */,
+			);
+			path = "Parse-RACExtensionsTests";
+			sourceTree = "<group>";
+		};
+		556BB02D177E04D000F9ED05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				556BB02E177E04D000F9ED05 /* Parse-RACExtensionsTests-Info.plist */,
+				556BB02F177E04D000F9ED05 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		556BB011177E04D000F9ED05 /* Parse-RACExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556BB037177E04D000F9ED05 /* Build configuration list for PBXNativeTarget "Parse-RACExtensions" */;
+			buildPhases = (
+				556BB00E177E04D000F9ED05 /* Sources */,
+				556BB00F177E04D000F9ED05 /* Frameworks */,
+				556BB010177E04D000F9ED05 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Parse-RACExtensions";
+			productName = "Parse-RACExtensions";
+			productReference = 556BB012177E04D000F9ED05 /* libParse-RACExtensions.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		556BB022177E04D000F9ED05 /* Parse-RACExtensionsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556BB03A177E04D000F9ED05 /* Build configuration list for PBXNativeTarget "Parse-RACExtensionsTests" */;
+			buildPhases = (
+				556BB01E177E04D000F9ED05 /* Sources */,
+				556BB01F177E04D000F9ED05 /* Frameworks */,
+				556BB020177E04D000F9ED05 /* Resources */,
+				556BB021177E04D000F9ED05 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				556BB02A177E04D000F9ED05 /* PBXTargetDependency */,
+			);
+			name = "Parse-RACExtensionsTests";
+			productName = "Parse-RACExtensionsTests";
+			productReference = 556BB023177E04D000F9ED05 /* Parse-RACExtensionsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		556BB00A177E04D000F9ED05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Dave Lee";
+			};
+			buildConfigurationList = 556BB00D177E04D000F9ED05 /* Build configuration list for PBXProject "Parse-RACExtensions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 556BB009177E04D000F9ED05;
+			productRefGroup = 556BB013177E04D000F9ED05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				556BB011177E04D000F9ED05 /* Parse-RACExtensions */,
+				556BB022177E04D000F9ED05 /* Parse-RACExtensionsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		556BB020177E04D000F9ED05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556BB031177E04D000F9ED05 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		556BB021177E04D000F9ED05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		556BB00E177E04D000F9ED05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556BB01D177E04D000F9ED05 /* Parse_RACExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		556BB01E177E04D000F9ED05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556BB034177E04D000F9ED05 /* Parse_RACExtensionsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		556BB02A177E04D000F9ED05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 556BB011177E04D000F9ED05 /* Parse-RACExtensions */;
+			targetProxy = 556BB029177E04D000F9ED05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		556BB02F177E04D000F9ED05 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				556BB030177E04D000F9ED05 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		556BB035177E04D000F9ED05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		556BB036177E04D000F9ED05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		556BB038177E04D000F9ED05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Parse_RACExtensions.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Parse-RACExtensions/Parse-RACExtensions-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		556BB039177E04D000F9ED05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Parse_RACExtensions.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Parse-RACExtensions/Parse-RACExtensions-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		556BB03B177E04D000F9ED05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Parse-RACExtensions/Parse-RACExtensions-Prefix.pch";
+				INFOPLIST_FILE = "Parse-RACExtensionsTests/Parse-RACExtensionsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		556BB03C177E04D000F9ED05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Parse-RACExtensions/Parse-RACExtensions-Prefix.pch";
+				INFOPLIST_FILE = "Parse-RACExtensionsTests/Parse-RACExtensionsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		556BB00D177E04D000F9ED05 /* Build configuration list for PBXProject "Parse-RACExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556BB035177E04D000F9ED05 /* Debug */,
+				556BB036177E04D000F9ED05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556BB037177E04D000F9ED05 /* Build configuration list for PBXNativeTarget "Parse-RACExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556BB038177E04D000F9ED05 /* Debug */,
+				556BB039177E04D000F9ED05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		556BB03A177E04D000F9ED05 /* Build configuration list for PBXNativeTarget "Parse-RACExtensionsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556BB03B177E04D000F9ED05 /* Debug */,
+				556BB03C177E04D000F9ED05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 556BB00A177E04D000F9ED05 /* Project object */;
+}

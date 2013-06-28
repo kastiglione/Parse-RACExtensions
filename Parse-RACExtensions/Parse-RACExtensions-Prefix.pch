@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Parse-RACExtensions' target in the 'Parse-RACExtensions' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
