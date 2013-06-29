@@ -17,6 +17,7 @@
 		556BB031177E04D000F9ED05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556BB02F177E04D000F9ED05 /* InfoPlist.strings */; };
 		556BB034177E04D000F9ED05 /* Parse_RACExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB033177E04D000F9ED05 /* Parse_RACExtensionsTests.m */; };
 		556BB093177E9DB800F9ED05 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB088177E986D00F9ED05 /* libReactiveCocoa-iOS.a */; };
+		556BB095177E9EBE00F9ED05 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB094177E9EBE00F9ED05 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		556BB032177E04D000F9ED05 /* Parse_RACExtensionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parse_RACExtensionsTests.h; sourceTree = "<group>"; };
 		556BB033177E04D000F9ED05 /* Parse_RACExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_RACExtensionsTests.m; sourceTree = "<group>"; };
 		556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = external/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
+		556BB094177E9EBE00F9ED05 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			files = (
 				556BB093177E9DB800F9ED05 /* libReactiveCocoa-iOS.a in Frameworks */,
 				556BB016177E04D000F9ED05 /* Foundation.framework in Frameworks */,
+				556BB095177E9EBE00F9ED05 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */,
+				556BB094177E9EBE00F9ED05 /* Parse.framework */,
 				556BB015177E04D000F9ED05 /* Foundation.framework */,
 				556BB024177E04D000F9ED05 /* SenTestingKit.framework */,
 				556BB026177E04D000F9ED05 /* UIKit.framework */,
@@ -457,6 +461,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/Parse_RACExtensions.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Parse-RACExtensions/Parse-RACExtensions-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
@@ -469,6 +477,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/Parse_RACExtensions.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Parse-RACExtensions/Parse-RACExtensions-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
