@@ -16,6 +16,7 @@
 		556BB02B177E04D000F9ED05 /* libParse-RACExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB012177E04D000F9ED05 /* libParse-RACExtensions.a */; };
 		556BB031177E04D000F9ED05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556BB02F177E04D000F9ED05 /* InfoPlist.strings */; };
 		556BB034177E04D000F9ED05 /* Parse_RACExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB033177E04D000F9ED05 /* Parse_RACExtensionsTests.m */; };
+		556BB093177E9DB800F9ED05 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB088177E986D00F9ED05 /* libReactiveCocoa-iOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,55 @@
 			proxyType = 1;
 			remoteGlobalIDString = 556BB011177E04D000F9ED05;
 			remoteInfo = "Parse-RACExtensions";
+		};
+		556BB085177E986D00F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88037F8315056328001A5B19;
+			remoteInfo = ReactiveCocoa;
+		};
+		556BB087177E986D00F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88F440AB153DAC820097B4C3;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		556BB089177E986D00F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88CDF7DC15000FCF00163A9F;
+			remoteInfo = ReactiveCocoaTests;
+		};
+		556BB08B177E986D00F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FAF5223174D4C2000CAC810;
+			remoteInfo = "ReactiveCocoaTests-iOS";
+		};
+		556BB08D177E986D00F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1860F412177C91B500C7B3C9;
+			remoteInfo = "ReactiveCocoa-iOS-UIKitTestHost";
+		};
+		556BB08F177E986D00F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1860F430177C91B500C7B3C9;
+			remoteInfo = "ReactiveCocoa-iOS-UIKitTestHostTests";
+		};
+		556BB091177E988300F9ED05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 88F440AA153DAC820097B4C3;
+			remoteInfo = "ReactiveCocoa-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,6 +104,7 @@
 		556BB030177E04D000F9ED05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		556BB032177E04D000F9ED05 /* Parse_RACExtensionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parse_RACExtensionsTests.h; sourceTree = "<group>"; };
 		556BB033177E04D000F9ED05 /* Parse_RACExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_RACExtensionsTests.m; sourceTree = "<group>"; };
+		556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = external/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556BB093177E9DB800F9ED05 /* libReactiveCocoa-iOS.a in Frameworks */,
 				556BB016177E04D000F9ED05 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +153,7 @@
 		556BB014177E04D000F9ED05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */,
 				556BB015177E04D000F9ED05 /* Foundation.framework */,
 				556BB024177E04D000F9ED05 /* SenTestingKit.framework */,
 				556BB026177E04D000F9ED05 /* UIKit.framework */,
@@ -145,6 +198,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		556BB07B177E986C00F9ED05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556BB086177E986D00F9ED05 /* ReactiveCocoa.framework */,
+				556BB088177E986D00F9ED05 /* libReactiveCocoa-iOS.a */,
+				556BB08A177E986D00F9ED05 /* ReactiveCocoaTests.octest */,
+				556BB08C177E986D00F9ED05 /* ReactiveCocoaTests-iOS.octest */,
+				556BB08E177E986D00F9ED05 /* ReactiveCocoa-iOS-UIKitTestHost.app */,
+				556BB090177E986D00F9ED05 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +225,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				556BB092177E988300F9ED05 /* PBXTargetDependency */,
 			);
 			name = "Parse-RACExtensions";
 			productName = "Parse-RACExtensions";
@@ -203,6 +270,12 @@
 			mainGroup = 556BB009177E04D000F9ED05;
 			productRefGroup = 556BB013177E04D000F9ED05 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 556BB07B177E986C00F9ED05 /* Products */;
+					ProjectRef = 556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				556BB011177E04D000F9ED05 /* Parse-RACExtensions */,
@@ -210,6 +283,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		556BB086177E986D00F9ED05 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = 556BB085177E986D00F9ED05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		556BB088177E986D00F9ED05 /* libReactiveCocoa-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactiveCocoa-iOS.a";
+			remoteRef = 556BB087177E986D00F9ED05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		556BB08A177E986D00F9ED05 /* ReactiveCocoaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.octest;
+			remoteRef = 556BB089177E986D00F9ED05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		556BB08C177E986D00F9ED05 /* ReactiveCocoaTests-iOS.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoaTests-iOS.octest";
+			remoteRef = 556BB08B177E986D00F9ED05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		556BB08E177E986D00F9ED05 /* ReactiveCocoa-iOS-UIKitTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "ReactiveCocoa-iOS-UIKitTestHost.app";
+			remoteRef = 556BB08D177E986D00F9ED05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		556BB090177E986D00F9ED05 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoa-iOS-UIKitTestHostTests.octest";
+			remoteRef = 556BB08F177E986D00F9ED05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		556BB020177E04D000F9ED05 /* Resources */ = {
@@ -262,6 +380,11 @@
 			isa = PBXTargetDependency;
 			target = 556BB011177E04D000F9ED05 /* Parse-RACExtensions */;
 			targetProxy = 556BB029177E04D000F9ED05 /* PBXContainerItemProxy */;
+		};
+		556BB092177E988300F9ED05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveCocoa-iOS";
+			targetProxy = 556BB091177E988300F9ED05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -403,6 +526,7 @@
 				556BB039177E04D000F9ED05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		556BB03A177E04D000F9ED05 /* Build configuration list for PBXNativeTarget "Parse-RACExtensionsTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +535,7 @@
 				556BB03C177E04D000F9ED05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

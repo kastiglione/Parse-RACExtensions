@@ -1,0 +1,4 @@
+[submodule "external/ReactiveCocoa"]
+	path = external/ReactiveCocoa
+	url = https://github.com/ReactiveCocoa/ReactiveCocoa.git
+	branch = 2.0-development
