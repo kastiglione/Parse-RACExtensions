@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		556BB016177E04D000F9ED05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB015177E04D000F9ED05 /* Foundation.framework */; };
-		556BB01B177E04D000F9ED05 /* Parse_RACExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 556BB01A177E04D000F9ED05 /* Parse_RACExtensions.h */; };
-		556BB01D177E04D000F9ED05 /* Parse_RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB01C177E04D000F9ED05 /* Parse_RACExtensions.m */; };
 		556BB025177E04D000F9ED05 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB024177E04D000F9ED05 /* SenTestingKit.framework */; };
 		556BB027177E04D000F9ED05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB026177E04D000F9ED05 /* UIKit.framework */; };
 		556BB028177E04D000F9ED05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB015177E04D000F9ED05 /* Foundation.framework */; };
@@ -86,7 +84,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				556BB01B177E04D000F9ED05 /* Parse_RACExtensions.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +93,6 @@
 		556BB012177E04D000F9ED05 /* libParse-RACExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libParse-RACExtensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556BB015177E04D000F9ED05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		556BB019177E04D000F9ED05 /* Parse-RACExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Parse-RACExtensions-Prefix.pch"; sourceTree = "<group>"; };
-		556BB01A177E04D000F9ED05 /* Parse_RACExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parse_RACExtensions.h; sourceTree = "<group>"; };
-		556BB01C177E04D000F9ED05 /* Parse_RACExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_RACExtensions.m; sourceTree = "<group>"; };
 		556BB023177E04D000F9ED05 /* Parse-RACExtensionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Parse-RACExtensionsTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556BB024177E04D000F9ED05 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		556BB026177E04D000F9ED05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -168,8 +163,6 @@
 		556BB017177E04D000F9ED05 /* Parse-RACExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				556BB01A177E04D000F9ED05 /* Parse_RACExtensions.h */,
-				556BB01C177E04D000F9ED05 /* Parse_RACExtensions.m */,
 				556BB018177E04D000F9ED05 /* Supporting Files */,
 			);
 			path = "Parse-RACExtensions";
@@ -365,7 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556BB01D177E04D000F9ED05 /* Parse_RACExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
