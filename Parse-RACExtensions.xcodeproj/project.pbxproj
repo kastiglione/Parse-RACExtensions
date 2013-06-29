@@ -18,6 +18,7 @@
 		556BB095177E9EBE00F9ED05 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB094177E9EBE00F9ED05 /* Parse.framework */; };
 		556BB098177E9F9700F9ED05 /* PFQuery+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB097177E9F9700F9ED05 /* PFQuery+RACExtensions.m */; };
 		556BB09F177EA4DE00F9ED05 /* PFObject+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB09E177EA4DE00F9ED05 /* PFObject+RACExtensions.m */; };
+		556BB0A4177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB0A3177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,8 @@
 		556BB097177E9F9700F9ED05 /* PFQuery+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "PFQuery+RACExtensions.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		556BB09D177EA4DE00F9ED05 /* PFObject+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFObject+RACExtensions.h"; sourceTree = "<group>"; };
 		556BB09E177EA4DE00F9ED05 /* PFObject+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFObject+RACExtensions.m"; sourceTree = "<group>"; };
+		556BB0A2177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFGeoPoint+RACExtensions.h"; sourceTree = "<group>"; };
+		556BB0A3177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFGeoPoint+RACExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +177,8 @@
 				556BB09E177EA4DE00F9ED05 /* PFObject+RACExtensions.m */,
 				556BB096177E9F9700F9ED05 /* PFQuery+RACExtensions.h */,
 				556BB097177E9F9700F9ED05 /* PFQuery+RACExtensions.m */,
+				556BB0A2177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.h */,
+				556BB0A3177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m */,
 				556BB018177E04D000F9ED05 /* Supporting Files */,
 			);
 			path = "Parse-RACExtensions";
@@ -371,6 +376,7 @@
 			files = (
 				556BB098177E9F9700F9ED05 /* PFQuery+RACExtensions.m in Sources */,
 				556BB09F177EA4DE00F9ED05 /* PFObject+RACExtensions.m in Sources */,
+				556BB0A4177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
