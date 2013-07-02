@@ -9,6 +9,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 #import "PFGeoPoint+RACExtensions.h"
+#import "PFRACCallbacks.h"
 
 @implementation PFGeoPoint (RACExtensions)
 

@@ -9,6 +9,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 #import "PFAnonymousUtils+RACExtensions.h"
+#import "PFRACCallbacks.h"
 
 @implementation PFAnonymousUtils (RACExtensions)
 

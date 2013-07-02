@@ -10,6 +10,7 @@
 #import <ReactiveCocoa/EXTScope.h>
 
 #import "PFQuery+RACExtensions.h"
+#import "PFRACCallbacks.h"
 
 @implementation PFQuery (RACExtensions)
 

@@ -9,6 +9,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 #import "PFUser+RACExtensions.h"
+#import "PFRACCallbacks.h"
 
 @implementation PFUser (RACExtensions)
 
