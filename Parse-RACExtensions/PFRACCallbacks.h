@@ -1,5 +1,5 @@
 //
-//  PFRACCallbackSubscriber.h
+//  PFRACCallbacks.h
 //  Parse-RACExtensions
 //
 //  Created by Dave Lee on 2013-07-02.

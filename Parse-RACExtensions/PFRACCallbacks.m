@@ -1,5 +1,5 @@
 //
-//  PFRACCallbackSubscriber.m
+//  PFRACCallbacks.m
 //  Parse-RACExtensions
 //
 //  Created by Dave Lee on 2013-07-02.
@@ -8,7 +8,7 @@
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
-#import "PFRACCallbackSubscriber.h"
+#import "PFRACCallbacks.h"
 
 /*
  * Parse errors include only a generic "error" key. This function ensures that

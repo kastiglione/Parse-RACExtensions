@@ -9,7 +9,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 #import "PFObject+RACExtensions.h"
-#import "PFRACCallbackSubscriber.h"
+#import "PFRACCallbacks.h"
 
 @implementation PFObject (RACExtensions)
 
