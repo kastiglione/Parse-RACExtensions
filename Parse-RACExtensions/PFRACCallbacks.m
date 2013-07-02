@@ -30,10 +30,10 @@ PFBooleanResultBlock PFRACBooleanCallback(id<RACSubscriber> subscriber) {
 		} else {
 			[subscriber sendError:PFRACNormalizeError(error)];
 		}
-	}
+	};
 }
 
-PFObjectResultBlock PFRACObjectCallback(id<RACSubscriber> subscriber) {
+PFIdResultBlock PFRACObjectCallback(id<RACSubscriber> subscriber) {
 	return ^(id result, NSError *error) {
 		if (error == nil) {
 			[subscriber sendNext:result];
@@ -41,7 +41,7 @@ PFObjectResultBlock PFRACObjectCallback(id<RACSubscriber> subscriber) {
 		} else {
 			[subscriber sendError:PFRACNormalizeError(error)];
 		}
-	}
+	};
 }
 
 PFIntegerResultBlock PFRACIntegerCallback(id<RACSubscriber> subscriber) {
@@ -52,5 +52,5 @@ PFIntegerResultBlock PFRACIntegerCallback(id<RACSubscriber> subscriber) {
 		} else {
 			[subscriber sendError:PFRACNormalizeError(error)];
 		}
-	}
+	};
 }

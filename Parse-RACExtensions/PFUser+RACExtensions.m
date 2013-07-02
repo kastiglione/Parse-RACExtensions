@@ -23,7 +23,7 @@
 
 + (RACSignal *)rac_requestPasswordResetForEmail:(NSString *)email {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self requestPasswordResetForEmailInBackground:email block:PFRACBooleanCallbackSubscriber(subscriber)];
+		[self requestPasswordResetForEmailInBackground:email block:PFRACBooleanCallback(subscriber)];
 
 		return nil;
 	}];
@@ -31,7 +31,7 @@
 
 - (RACSignal *)rac_signUp {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self signUpInBackgroundWithBlock:PFRACBooleanCallbackSubscriber(subscriber)];
+		[self signUpInBackgroundWithBlock:PFRACBooleanCallback(subscriber)];
 
 		return nil;
 	}];

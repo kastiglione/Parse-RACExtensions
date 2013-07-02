@@ -12,5 +12,5 @@
 @protocol RACSubscriber;
 
 PFBooleanResultBlock PFRACBooleanCallback(id<RACSubscriber> subscriber);
-PFObjectResultBlock PFRACObjectCallback(id<RACSubscriber> subscriber);
+PFIdResultBlock PFRACObjectCallback(id<RACSubscriber> subscriber);
 PFIntegerResultBlock PFRACIntegerCallback(id<RACSubscriber> subscriber);
