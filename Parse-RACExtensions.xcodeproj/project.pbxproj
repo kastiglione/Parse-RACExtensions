@@ -26,6 +26,8 @@
 		556BB18B178383A800F9ED05 /* PFUser+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB0A5177EAF1000F9ED05 /* PFUser+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		556BB18C178383AB00F9ED05 /* PFAnonymousUtils+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB0A8177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		556BB18D178383B200F9ED05 /* PFGeoPoint+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB0A2177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556BB1941783856D00F9ED05 /* PFRACCallbackSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB1921783856D00F9ED05 /* PFRACCallbackSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556BB1951783856D00F9ED05 /* PFRACCallbackSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB1931783856D00F9ED05 /* PFRACCallbackSubscriber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +124,8 @@
 		556BB0A6177EAF1000F9ED05 /* PFUser+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFUser+RACExtensions.m"; sourceTree = "<group>"; };
 		556BB0A8177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFAnonymousUtils+RACExtensions.h"; sourceTree = "<group>"; };
 		556BB0A9177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFAnonymousUtils+RACExtensions.m"; sourceTree = "<group>"; };
+		556BB1921783856D00F9ED05 /* PFRACCallbackSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRACCallbackSubscriber.h; sourceTree = "<group>"; };
+		556BB1931783856D00F9ED05 /* PFRACCallbackSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRACCallbackSubscriber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 		556BB017177E04D000F9ED05 /* Parse-RACExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				556BB1921783856D00F9ED05 /* PFRACCallbackSubscriber.h */,
+				556BB1931783856D00F9ED05 /* PFRACCallbackSubscriber.m */,
 				556BB09D177EA4DE00F9ED05 /* PFObject+RACExtensions.h */,
 				556BB09E177EA4DE00F9ED05 /* PFObject+RACExtensions.m */,
 				556BB096177E9F9700F9ED05 /* PFQuery+RACExtensions.h */,
@@ -251,6 +257,7 @@
 				556BB18B178383A800F9ED05 /* PFUser+RACExtensions.h in Headers */,
 				556BB18C178383AB00F9ED05 /* PFAnonymousUtils+RACExtensions.h in Headers */,
 				556BB18D178383B200F9ED05 /* PFGeoPoint+RACExtensions.h in Headers */,
+				556BB1941783856D00F9ED05 /* PFRACCallbackSubscriber.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +417,7 @@
 				556BB0A4177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m in Sources */,
 				556BB0A7177EAF1000F9ED05 /* PFUser+RACExtensions.m in Sources */,
 				556BB0AA177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.m in Sources */,
+				556BB1951783856D00F9ED05 /* PFRACCallbackSubscriber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

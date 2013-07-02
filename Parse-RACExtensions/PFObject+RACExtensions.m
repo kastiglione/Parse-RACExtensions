@@ -9,19 +9,13 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 #import "PFObject+RACExtensions.h"
+#import "PFRACCallbackSubscriber.h"
 
 @implementation PFObject (RACExtensions)
 
 + (RACSignal *)rac_saveAll:(NSArray *)objects {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self saveAllInBackground:objects block:^(BOOL succeeded, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:@(succeeded)];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self saveAllInBackground:objects block:PFRACBooleanCallback(subscriber)];
 
 		return nil;
 	}];
@@ -59,14 +53,7 @@
 
 - (RACSignal *)rac_save {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:@(succeeded)];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self saveInBackgroundWithBlock:PFRACBooleanCallback(subscriber)];
 
 		return nil;
 	}];
@@ -74,14 +61,7 @@
 
 - (RACSignal *)rac_saveEventually {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self saveEventually:^(BOOL succeeded, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:@(succeeded)];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self saveEventually:PFRACBooleanCallback(subscriber)];
 
 		return nil;
 	}];
@@ -134,14 +114,7 @@
 
 - (RACSignal *)rac_delete {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:@(succeeded)];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self deleteInBackgroundWithBlock:PFRACBooleanCallback(subscriber)];
 
 		return nil;
 	}];
