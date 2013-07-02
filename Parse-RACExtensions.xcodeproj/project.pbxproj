@@ -26,8 +26,8 @@
 		556BB18B178383A800F9ED05 /* PFUser+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB0A5177EAF1000F9ED05 /* PFUser+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		556BB18C178383AB00F9ED05 /* PFAnonymousUtils+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB0A8177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		556BB18D178383B200F9ED05 /* PFGeoPoint+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB0A2177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		556BB1941783856D00F9ED05 /* PFRACCallbackSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB1921783856D00F9ED05 /* PFRACCallbackSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		556BB1951783856D00F9ED05 /* PFRACCallbackSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB1931783856D00F9ED05 /* PFRACCallbackSubscriber.m */; };
+		556BB19617838BBE00F9ED05 /* PFRACCallbackSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB1921783856D00F9ED05 /* PFRACCallbackSubscriber.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,7 +257,7 @@
 				556BB18B178383A800F9ED05 /* PFUser+RACExtensions.h in Headers */,
 				556BB18C178383AB00F9ED05 /* PFAnonymousUtils+RACExtensions.h in Headers */,
 				556BB18D178383B200F9ED05 /* PFGeoPoint+RACExtensions.h in Headers */,
-				556BB1941783856D00F9ED05 /* PFRACCallbackSubscriber.h in Headers */,
+				556BB19617838BBE00F9ED05 /* PFRACCallbackSubscriber.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
