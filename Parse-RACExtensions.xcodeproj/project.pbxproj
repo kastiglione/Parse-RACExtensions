@@ -21,6 +21,11 @@
 		556BB0A4177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB0A3177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m */; };
 		556BB0A7177EAF1000F9ED05 /* PFUser+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB0A6177EAF1000F9ED05 /* PFUser+RACExtensions.m */; };
 		556BB0AA177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB0A9177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.m */; };
+		556BB189178383A200F9ED05 /* PFObject+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB09D177EA4DE00F9ED05 /* PFObject+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556BB18A178383A500F9ED05 /* PFQuery+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB096177E9F9700F9ED05 /* PFQuery+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556BB18B178383A800F9ED05 /* PFUser+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB0A5177EAF1000F9ED05 /* PFUser+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556BB18C178383AB00F9ED05 /* PFAnonymousUtils+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB0A8177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		556BB18D178383B200F9ED05 /* PFGeoPoint+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB0A2177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +241,21 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		556BB1831783838F00F9ED05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556BB189178383A200F9ED05 /* PFObject+RACExtensions.h in Headers */,
+				556BB18A178383A500F9ED05 /* PFQuery+RACExtensions.h in Headers */,
+				556BB18B178383A800F9ED05 /* PFUser+RACExtensions.h in Headers */,
+				556BB18C178383AB00F9ED05 /* PFAnonymousUtils+RACExtensions.h in Headers */,
+				556BB18D178383B200F9ED05 /* PFGeoPoint+RACExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		556BB011177E04D000F9ED05 /* Parse-RACExtensions */ = {
 			isa = PBXNativeTarget;
@@ -244,6 +264,7 @@
 				556BB00E177E04D000F9ED05 /* Sources */,
 				556BB00F177E04D000F9ED05 /* Frameworks */,
 				556BB010177E04D000F9ED05 /* CopyFiles */,
+				556BB1831783838F00F9ED05 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -492,6 +513,7 @@
 				GCC_PREFIX_HEADER = "Parse-RACExtensions/Parse-RACExtensions-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -508,6 +530,7 @@
 				GCC_PREFIX_HEADER = "Parse-RACExtensions/Parse-RACExtensions-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
