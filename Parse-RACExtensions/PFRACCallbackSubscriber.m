@@ -20,3 +20,14 @@ PFBooleanResultBlock PFRACBooleanCallback(id<RACSubscriber> subscriber) {
 		}
 	}
 }
+
+PFObjectResultBlock PFRACObjectCallback(id<RACSubscriber> subscriber) {
+	return ^(id result, NSError *error) {
+		if (error == nil) {
+			[subscriber sendNext:result];
+			[subscriber sendCompleted];
+		} else {
+			[subscriber sendError:error];
+		}
+	}
+}

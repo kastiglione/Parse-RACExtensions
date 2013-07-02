@@ -14,14 +14,7 @@
 
 + (RACSignal *)rac_geoPointForCurrentLocation {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self geoPointForCurrentLocationInBackground:^(PFGeoPoint *geoPoint, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:geoPoint];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self geoPointForCurrentLocationInBackground:PFRACObjectCallback(subscriber)];
 
 		return nil;
 	}];

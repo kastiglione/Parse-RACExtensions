@@ -16,14 +16,7 @@
 - (RACSignal *)rac_getObjectWithId:(NSString *)objectId {
 	@weakify(self);
 	return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-		[self getObjectInBackgroundWithId:objectId block:^(PFObject *object, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:object];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self getObjectInBackgroundWithId:objectId block:PFRACObjectCallback(subscriber)];
 
 		return [RACDisposable disposableWithBlock:^{
 			@strongify(self);
@@ -35,14 +28,7 @@
 - (RACSignal *)rac_findObjects {
 	@weakify(self);
 	return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-		[self findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:objects];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self findObjectsInBackgroundWithBlock:PFRACObjectCallback(subscriber)];
 
 		return [RACDisposable disposableWithBlock:^{
 			@strongify(self);
@@ -54,14 +40,7 @@
 - (RACSignal *)rac_getFirstObject {
 	@weakify(self);
 	return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-		[self getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:object];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self getFirstObjectInBackgroundWithBlock:PFRACObjectCallback(subscriber)];
 
 		return [RACDisposable disposableWithBlock:^{
 			@strongify(self);

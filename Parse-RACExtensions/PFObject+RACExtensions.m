@@ -23,14 +23,7 @@
 
 + (RACSignal *)rac_fetchAll:(NSArray *)objects {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self fetchAllInBackground:objects block:^(NSArray *objects, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:objects];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self fetchAllInBackground:objects block:PFRACObjectCallback(subscriber)];
 
 		return nil;
 	}];
@@ -38,14 +31,7 @@
 
 + (RACSignal *)rac_fetchAllIfNeeded:(NSArray *)objects {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self fetchAllIfNeededInBackground:objects block:^(NSArray *objects, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:objects];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self fetchAllIfNeededInBackground:objects block:PFRACObjectCallback(subscriber)];
 
 		return nil;
 	}];
@@ -69,14 +55,7 @@
 
 - (RACSignal *)rac_refresh {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self refreshInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:object];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self refreshInBackgroundWithBlock:PFRACObjectCallback(subscriber)];
 
 		return nil;
 	}];
@@ -84,14 +63,7 @@
 
 - (RACSignal *)rac_fetch {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self fetchInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:object];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self fetchInBackgroundWithBlock:PFRACObjectCallback(subscriber)];
 
 		return nil;
 	}];
@@ -99,14 +71,7 @@
 
 - (RACSignal *)rac_fetchIfNeeded {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self fetchIfNeededInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:object];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self fetchIfNeededInBackgroundWithBlock:PFRACObjectCallback(subscriber)];
 
 		return nil;
 	}];

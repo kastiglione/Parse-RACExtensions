@@ -14,14 +14,7 @@
 
 + (RACSignal *)rac_logIn {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self logInWithBlock:^(PFUser *user, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:user];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self logInWithBlock:PFRACObjectCallback(subscriber)];
 
 		return nil;
 	}];

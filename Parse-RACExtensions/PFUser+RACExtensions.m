@@ -14,14 +14,7 @@
 
 + (RACSignal *)rac_logInWithUsername:(NSString *)username password:(NSString *)password {
 	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self logInWithUsernameInBackground:username password:password block:^(PFUser *user, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:user];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self logInWithUsernameInBackground:username password:password block:PFRACObjectCallback(subscriber)];
 
 		return nil;
 	}];

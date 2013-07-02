@@ -12,3 +12,4 @@
 @protocol RACSubscriber;
 
 PFBooleanResultBlock PFRACBooleanCallback(id<RACSubscriber> subscriber);
+PFObjectResultBlock PFRACObjectCallback(id<RACSubscriber> subscriber);
