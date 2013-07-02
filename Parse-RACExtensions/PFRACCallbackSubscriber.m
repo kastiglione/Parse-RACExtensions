@@ -31,3 +31,14 @@ PFObjectResultBlock PFRACObjectCallback(id<RACSubscriber> subscriber) {
 		}
 	}
 }
+
+PFIntegerResultBlock PFRACIntegerCallback(id<RACSubscriber> subscriber) {
+	return ^(int number, NSError *error) {
+		if (error == nil) {
+			[subscriber sendNext:@(number)];
+			[subscriber sendCompleted];
+		} else {
+			[subscriber sendError:error];
+		}
+	}
+}

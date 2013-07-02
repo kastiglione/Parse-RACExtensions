@@ -52,14 +52,7 @@
 - (RACSignal *)rac_countObjects {
 	@weakify(self);
 	return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-		[self countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
-			if (error == nil) {
-				[subscriber sendNext:@(number)];
-				[subscriber sendCompleted];
-			} else {
-				[subscriber sendError:error];
-			}
-		}];
+		[self countObjectsInBackgroundWithBlock:PFRACIntegerCallback(subscriber)];
 
 		return [RACDisposable disposableWithBlock:^{
 			@strongify(self);
