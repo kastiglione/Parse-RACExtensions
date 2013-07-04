@@ -12,13 +12,13 @@
 
 /*
  * Parse errors include only a generic "error" key. This function ensures that
- * generic error gets assigned under NSLocalizedFailureReasonErrorKey.
+ * generic error gets assigned under NSLocalizedDescriptionKey.
  */
 static NSError *PFRACNormalizeError(NSError *error) {
 	if (error.userInfo[@"error"] == nil) return error;
 
 	NSMutableDictionary *userInfo = [error.userInfo mutableCopy];
-	userInfo[NSLocalizedFailureReasonErrorKey] = userInfo[@"error"];
+	userInfo[NSLocalizedDescriptionKey] = userInfo[@"error"];
 	return [NSError errorWithDomain:error.domain code:error.code userInfo:userInfo];
 }
 
