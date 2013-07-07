@@ -30,7 +30,7 @@ PFBooleanResultBlock PFRACBooleanCallback(id<RACSubscriber> subscriber) {
 		if (succeeded && error == nil) {
 			[subscriber sendCompleted];
 		} else {
-			[subscriber sendError:error];
+			[subscriber sendError:PFRACNormalizeError(error)];
 		}
 	};
 }
