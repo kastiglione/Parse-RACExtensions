@@ -9,6 +9,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
 #import "PFAnonymousUtils+RACExtensions.h"
+#import "PFFile+RACExtensions.h"
 #import "PFGeoPoint+RACExtensions.h"
 #import "PFObject+RACExtensions.h"
 #import "PFQuery+RACExtensions.h"
