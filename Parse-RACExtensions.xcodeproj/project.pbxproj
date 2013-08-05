@@ -11,6 +11,8 @@
 		55624E4517AAD4E3003ABBB0 /* PFFile+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55624E4317AAD4E3003ABBB0 /* PFFile+RACExtensions.m */; };
 		55624E4D17AAE626003ABBB0 /* PFPush+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */; };
 		55624E4E17AAE626003ABBB0 /* PFPush+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55624E4C17AAE626003ABBB0 /* PFPush+RACExtensions.m */; };
+		55624E5117B00E66003ABBB0 /* PFCloud+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4F17B00E66003ABBB0 /* PFCloud+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55624E5217B00E66003ABBB0 /* PFCloud+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55624E5017B00E66003ABBB0 /* PFCloud+RACExtensions.m */; };
 		5564E8621787DE400029B613 /* PFRACErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 5564E8601787DE400029B613 /* PFRACErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5564E8631787DE400029B613 /* PFRACErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564E8611787DE400029B613 /* PFRACErrors.m */; };
 		556BB016177E04D000F9ED05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB015177E04D000F9ED05 /* Foundation.framework */; };
@@ -113,6 +115,8 @@
 		55624E4317AAD4E3003ABBB0 /* PFFile+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFFile+RACExtensions.m"; sourceTree = "<group>"; };
 		55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFPush+RACExtensions.h"; sourceTree = "<group>"; };
 		55624E4C17AAE626003ABBB0 /* PFPush+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFPush+RACExtensions.m"; sourceTree = "<group>"; };
+		55624E4F17B00E66003ABBB0 /* PFCloud+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFCloud+RACExtensions.h"; sourceTree = "<group>"; };
+		55624E5017B00E66003ABBB0 /* PFCloud+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFCloud+RACExtensions.m"; sourceTree = "<group>"; };
 		5564E8601787DE400029B613 /* PFRACErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRACErrors.h; sourceTree = "<group>"; };
 		5564E8611787DE400029B613 /* PFRACErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRACErrors.m; sourceTree = "<group>"; };
 		556BB012177E04D000F9ED05 /* libParse-RACExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libParse-RACExtensions.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +209,8 @@
 				B87AE4BD17A8005200F5A308 /* Parse-RACExtensions.h */,
 				556BB0A8177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.h */,
 				556BB0A9177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.m */,
+				55624E4F17B00E66003ABBB0 /* PFCloud+RACExtensions.h */,
+				55624E5017B00E66003ABBB0 /* PFCloud+RACExtensions.m */,
 				55624E4217AAD4E3003ABBB0 /* PFFile+RACExtensions.h */,
 				55624E4317AAD4E3003ABBB0 /* PFFile+RACExtensions.m */,
 				556BB0A2177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.h */,
@@ -282,6 +288,7 @@
 				556BB19617838BBE00F9ED05 /* PFRACCallbacks.h in Headers */,
 				55624E4D17AAE626003ABBB0 /* PFPush+RACExtensions.h in Headers */,
 				5564E8621787DE400029B613 /* PFRACErrors.h in Headers */,
+				55624E5117B00E66003ABBB0 /* PFCloud+RACExtensions.h in Headers */,
 				B87AE4BF17A8005200F5A308 /* Parse-RACExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +448,7 @@
 				556BB098177E9F9700F9ED05 /* PFQuery+RACExtensions.m in Sources */,
 				55624E4E17AAE626003ABBB0 /* PFPush+RACExtensions.m in Sources */,
 				556BB09F177EA4DE00F9ED05 /* PFObject+RACExtensions.m in Sources */,
+				55624E5217B00E66003ABBB0 /* PFCloud+RACExtensions.m in Sources */,
 				556BB0A4177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m in Sources */,
 				556BB0A7177EAF1000F9ED05 /* PFUser+RACExtensions.m in Sources */,
 				556BB0AA177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.m in Sources */,
