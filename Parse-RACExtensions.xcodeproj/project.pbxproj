@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		55624E4417AAD4E3003ABBB0 /* PFFile+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4217AAD4E3003ABBB0 /* PFFile+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55624E4517AAD4E3003ABBB0 /* PFFile+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55624E4317AAD4E3003ABBB0 /* PFFile+RACExtensions.m */; };
-		55624E4D17AAE626003ABBB0 /* PFPush+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */; };
+		55624E4D17AAE626003ABBB0 /* PFPush+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55624E4E17AAE626003ABBB0 /* PFPush+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55624E4C17AAE626003ABBB0 /* PFPush+RACExtensions.m */; };
 		55624E5117B00E66003ABBB0 /* PFCloud+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4F17B00E66003ABBB0 /* PFCloud+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55624E5217B00E66003ABBB0 /* PFCloud+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55624E5017B00E66003ABBB0 /* PFCloud+RACExtensions.m */; };
