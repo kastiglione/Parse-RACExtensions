@@ -25,8 +25,9 @@
 ///
 /// @see -getDataInBackgroundWithBlock:progressBlock:
 ///
-/// @return A signal that "periodically" sends percent progress. The signal will
-/// send 100 percent before completing.
+/// @return A signal of two signals. The first signal "periodically" sends the
+/// progress of the data fetch as an integer percentage. The second signal sends
+/// the NSData on successful completion.
 - (RACSignal *)rac_getData;
 
 /// This method is like -rac_getData but avoids ever holding the entire contents
@@ -35,8 +36,9 @@
 ///
 /// @see -getDataStreamInBackgroundWithBlock:progressBlock:
 ///
-/// @return A signal that "periodically" sends percent progress. The signal will
-/// send 100 percent before completing.
+/// @return A signal of two signals. The first signal "periodically" sends the
+/// progress of the data fetch as an integer percentage. The second signal sends
+/// the NSInputStream on successful completion.
 - (RACSignal *)rac_getDataStream;
 
 @end
