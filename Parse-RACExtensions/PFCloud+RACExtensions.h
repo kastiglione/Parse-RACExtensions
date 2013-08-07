@@ -12,6 +12,13 @@
 
 @interface PFCloud (RACExtensions)
 
+/// Calls the given cloud function with the parameters provided.
+///
+/// @see +callFunctionInBackground:withParameters:block:
+///
+/// @param function The function name to call.
+/// @param parameters The parameters to send to the function.
+/// @return A signal that sends the function's return value.
 + (RACSignal *)rac_callFunction:(NSString *)function withParameters:(NSDictionary *)parameters;
 
 @end
