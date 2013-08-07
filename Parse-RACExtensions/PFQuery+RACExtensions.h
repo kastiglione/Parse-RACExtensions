@@ -12,9 +12,36 @@
 
 @interface PFQuery (RACExtensions)
 
+/// Gets a PFObject with the given id.
+///
+/// @warning This mutates the PFQuery.
+///
+/// @see -getObjectInBackgroundWithId:block:
+///
+/// @return A signal that sends the identified PFObject.
 - (RACSignal *)rac_getObjectWithId:(NSString *)objectId;
+
+/// Finds objects based on the constructed query.
+///
+/// @see -findObjectsInBackgroundWithBlock:
+///
+/// @return A signal that sends the NSArray of matching PFObjects.
 - (RACSignal *)rac_findObjects;
+
+/// Gets an object based on the constructed query.
+///
+/// @warning This mutates the PFQuery.
+///
+/// @see -getFirstObjectInBackgroundWithBlock:
+///
+/// @return A signal that sends the first matching PFObject.
 - (RACSignal *)rac_getFirstObject;
+
+/// Counts objects based on the constructed query.
+///
+/// @see -countObjectsInBackgroundWithBlock:
+///
+/// @return A signal that sends the integer count of matching PFObjects
 - (RACSignal *)rac_countObjects;
 
 @end

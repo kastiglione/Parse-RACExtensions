@@ -12,6 +12,11 @@
 
 @interface PFGeoPoint (RACExtensions)
 
+/// Fetches the device's current location
+///
+/// @see +geoPointForCurrentLocationInBackground:
+///
+/// @return A signal which sends a PFGeoPoint representing the current location.
 + (RACSignal *)rac_geoPointForCurrentLocation;
 
 @end

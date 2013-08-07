@@ -12,6 +12,11 @@
 
 @interface PFAnonymousUtils (RACExtensions)
 
+/// Creates an anonymous user.
+///
+/// @see +logInWithBlock:
+///
+/// @return A signal that sends the anonymous PFUser on successful login.
 + (RACSignal *)rac_logIn;
 
 @end
