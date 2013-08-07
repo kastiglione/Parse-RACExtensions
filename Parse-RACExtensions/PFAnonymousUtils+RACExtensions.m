@@ -14,10 +14,11 @@
 @implementation PFAnonymousUtils (RACExtensions)
 
 + (RACSignal *)rac_logIn {
-	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
+	return [[RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
 		[self logInWithBlock:PFRACObjectCallback(subscriber)];
 		return nil;
-	}];
+	}]
+	setNameWithFormat:@"+rac_logIn"];
 }
 
 @end

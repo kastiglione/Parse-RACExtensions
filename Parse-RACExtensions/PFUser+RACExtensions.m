@@ -15,36 +15,39 @@
 @implementation PFUser (RACExtensions)
 
 + (RACSignal *)rac_logInWithUsername:(NSString *)username password:(NSString *)password {
-	return [[RACSignal
+	return [[[RACSignal
 		createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
 			[self logInWithUsernameInBackground:username password:password block:PFRACObjectCallback(subscriber)];
 			return nil;
 		}]
 		catch:^(NSError *error) {
 			return [RACSignal error:PFRACDescribeGenericError(error, NSLocalizedString(@"log in failed", nil))];
-		}];
+		}]
+		setNameWithFormat:@"+rac_logInWithUsername: %@ password: %@", username, password]; // Debug builds only
 }
 
 + (RACSignal *)rac_requestPasswordResetForEmail:(NSString *)email {
-	return [[RACSignal
+	return [[[RACSignal
 		createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
 			[self requestPasswordResetForEmailInBackground:email block:PFRACBooleanCallback(subscriber)];
 			return nil;
 		}]
 		catch:^(NSError *error) {
 			return [RACSignal error:PFRACDescribeGenericError(error, NSLocalizedString(@"request password reset failed", nil))];
-		}];
+		}]
+		setNameWithFormat:@"+rac_requestPasswordResetForEmail: %@", email];
 }
 
 - (RACSignal *)rac_signUp {
-	return [[RACSignal
+	return [[[RACSignal
 		createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
 			[self signUpInBackgroundWithBlock:PFRACBooleanCallback(subscriber)];
 			return nil;
 		}]
 		catch:^(NSError *error) {
 			return [RACSignal error:PFRACDescribeGenericError(error, NSLocalizedString(@"sign up failed", nil))];
-		}];
+		}]
+		setNameWithFormat:@"%@ -rac_signUp", self];
 }
 
 @end

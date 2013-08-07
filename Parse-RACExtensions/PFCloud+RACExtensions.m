@@ -14,10 +14,11 @@
 @implementation PFCloud (RACExtensions)
 
 + (RACSignal *)rac_callFunction:(NSString *)function withParameters:(NSDictionary *)parameters {
-	return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+	return [[RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 		[self callFunctionInBackground:function withParameters:parameters block:PFRACObjectCallback(subscriber)];
 		return nil;
-	}];
+	}]
+	setNameWithFormat:@"+rac_callFunction: %@ withParameters: %@", function, parameters];
 }
 
 @end

@@ -14,10 +14,11 @@
 @implementation PFGeoPoint (RACExtensions)
 
 + (RACSignal *)rac_geoPointForCurrentLocation {
-	return [RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
+	return [[RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
 		[self geoPointForCurrentLocationInBackground:PFRACObjectCallback(subscriber)];
 		return nil;
-	}];
+	}]
+	setNameWithFormat:@"+rac_geoPointForCurrentLocation"];
 }
 
 @end
