@@ -14,6 +14,8 @@
 
 /// Gets a PFObject with the given id.
 ///
+/// Disposing subscription will also cancel the query.
+///
 /// @warning This mutates the PFQuery.
 ///
 /// @see -getObjectInBackgroundWithId:block:
@@ -23,12 +25,16 @@
 
 /// Finds objects based on the constructed query.
 ///
+/// Disposing subscription will also cancel the query.
+///
 /// @see -findObjectsInBackgroundWithBlock:
 ///
 /// @return A signal that sends the NSArray of matching PFObjects.
 - (RACSignal *)rac_findObjects;
 
 /// Gets an object based on the constructed query.
+///
+/// Disposing subscription will also cancel the query.
 ///
 /// @warning This mutates the PFQuery.
 ///
@@ -38,6 +44,8 @@
 - (RACSignal *)rac_getFirstObject;
 
 /// Counts objects based on the constructed query.
+///
+/// Disposing subscription will also cancel the query.
 ///
 /// @see -countObjectsInBackgroundWithBlock:
 ///
