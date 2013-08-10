@@ -11,10 +11,8 @@
 #import "PFRACCallbacks.h"
 #import "PFRACErrors.h"
 
-/*
- * Parse errors include only a generic "error" key. This function ensures that
- * generic error gets assigned under NSLocalizedDescriptionKey.
- */
+// Parse errors include only a generic "error" key. This function ensures that
+// generic error gets assigned under NSLocalizedDescriptionKey.
 static NSError *PFRACNormalizeError(NSError *error) {
 	if (error == nil) return [NSError errorWithDomain:PFRACErrorDomain code:PFRACUnknownError userInfo:nil];
 
