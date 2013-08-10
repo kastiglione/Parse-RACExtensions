@@ -14,18 +14,22 @@
 
 /// Saves the file.
 ///
+/// Disposing subscription will also cancel the save.
+///
 /// @see -saveInBackgroundWithBlock:progressBlock:
 ///
-/// @return A signal that "periodically" sends percent progress. The signal will
+/// @return A signal that periodically sends percent progress. The signal will
 /// send 100 percent before completing.
 - (RACSignal *)rac_save;
 
 /// Gets the data, either from cache if available, or, fetches its contents from
 /// the Parse servers.
 ///
+/// Disposing subscription will also cancel the fetch.
+///
 /// @see -getDataInBackgroundWithBlock:progressBlock:
 ///
-/// @return A signal of two signals. The first signal "periodically" sends the
+/// @return A signal of two signals. The first signal periodically sends the
 /// progress of the data fetch as an integer percentage. The second signal sends
 /// the NSData on successful completion.
 - (RACSignal *)rac_getData;
@@ -34,9 +38,11 @@
 /// of the PFFile in memory at once. This can help apps with many large PFFiles
 /// avoid memory warnings.
 ///
+/// Disposing subscription will also cancel the fetch.
+///
 /// @see -getDataStreamInBackgroundWithBlock:progressBlock:
 ///
-/// @return A signal of two signals. The first signal "periodically" sends the
+/// @return A signal of two signals. The first signal periodically sends the
 /// progress of the data fetch as an integer percentage. The second signal sends
 /// the NSInputStream on successful completion.
 - (RACSignal *)rac_getDataStream;
