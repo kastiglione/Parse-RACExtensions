@@ -20,9 +20,7 @@
 			[self logInWithUsernameInBackground:username password:password block:PFRACObjectCallback(subscriber)];
 			return nil;
 		}]
-		catch:^(NSError *error) {
-			return [RACSignal error:PFRACDescribeGenericError(error, NSLocalizedString(@"log in failed", nil))];
-		}]
+		pfrac_useDefaultErrorDescription:NSLocalizedString(@"log in failed", nil)]
 		setNameWithFormat:@"+rac_logInWithUsername: %@ password: %@", username, password]; // Debug builds only
 }
 
@@ -32,9 +30,7 @@
 			[self requestPasswordResetForEmailInBackground:email block:PFRACBooleanCallback(subscriber)];
 			return nil;
 		}]
-		catch:^(NSError *error) {
-			return [RACSignal error:PFRACDescribeGenericError(error, NSLocalizedString(@"request password reset failed", nil))];
-		}]
+		pfrac_useDefaultErrorDescription:NSLocalizedString(@"request password reset failed", nil)]
 		setNameWithFormat:@"+rac_requestPasswordResetForEmail: %@", email];
 }
 
@@ -44,9 +40,7 @@
 			[self signUpInBackgroundWithBlock:PFRACBooleanCallback(subscriber)];
 			return nil;
 		}]
-		catch:^(NSError *error) {
-			return [RACSignal error:PFRACDescribeGenericError(error, NSLocalizedString(@"sign up failed", nil))];
-		}]
+		pfrac_useDefaultErrorDescription:NSLocalizedString(@"sign up failed", nil)]
 		setNameWithFormat:@"%@ -rac_signUp", self];
 }
 

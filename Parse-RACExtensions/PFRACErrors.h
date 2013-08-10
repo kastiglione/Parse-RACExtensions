@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/RACSignal.h>
 
 extern NSString * const PFRACErrorDomain;
 extern const NSUInteger PFRACUnknownError;
 
-NSError * PFRACDescribeGenericError(NSError *error, NSString *localizedDescription);
+@interface RACSignal (PFRACErrorHandling)
+
+- (RACSignal *)pfrac_useDefaultErrorDescription:(NSString *)localizedDescription;
+
+@end

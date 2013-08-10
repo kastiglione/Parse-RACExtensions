@@ -7,11 +7,14 @@
 //
 
 #import "PFRACErrors.h"
+#import <ReactiveCocoa/RACSignal+Operations.h>
 
 NSString * const PFRACErrorDomain = @"PFRACErrorDomain";
 const NSUInteger PFRACUnknownError = 0;
 
-NSError * PFRACDescribeGenericError(NSError *error, NSString *localizedDescription) {
+@implementation RACSignal (PFRACErrorHandling)
+
+static NSError * PFRACDescribeGenericError(NSError *error, NSString *localizedDescription) {
 	if ([error.domain isEqualToString:PFRACErrorDomain] && error.userInfo[NSLocalizedDescriptionKey] == nil) {
 		NSMutableDictionary *userInfo = [(error.userInfo ?: @{}) mutableCopy];
 		userInfo[NSLocalizedDescriptionKey] = localizedDescription;
@@ -20,3 +23,11 @@ NSError * PFRACDescribeGenericError(NSError *error, NSString *localizedDescripti
 
 	return error;
 }
+
+- (RACSignal *)pfrac_useDefaultErrorDescription:(NSString *)localizedDescription {
+	return [self catch:^(NSError *error) {
+		return [RACSignal error:PFRACDescribeGenericError(error, localizedDescription)];
+	}];
+}
+
+@end
