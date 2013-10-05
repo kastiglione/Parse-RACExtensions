@@ -111,6 +111,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55581C05180050E000A42588 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		55624E4217AAD4E3003ABBB0 /* PFFile+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFFile+RACExtensions.h"; sourceTree = "<group>"; };
 		55624E4317AAD4E3003ABBB0 /* PFFile+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFFile+RACExtensions.m"; sourceTree = "<group>"; };
 		55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFPush+RACExtensions.h"; sourceTree = "<group>"; };
@@ -208,6 +209,7 @@
 		556BB009177E04D000F9ED05 = {
 			isa = PBXGroup;
 			children = (
+				55581C05180050E000A42588 /* README.md */,
 				556BB017177E04D000F9ED05 /* Parse-RACExtensions */,
 				556BB02C177E04D000F9ED05 /* Parse-RACExtensionsTests */,
 				556BB014177E04D000F9ED05 /* Frameworks */,
