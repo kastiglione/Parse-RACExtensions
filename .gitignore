@@ -13,10 +13,12 @@ xcuserdata
 profile
 *.moved-aside
 *.xccheckout
+
+# AppCode
 DerivedData
 .idea/
 *.hmap
 
-#CocoaPods
+# CocoaPods
 Podfile.lock
 Pods
