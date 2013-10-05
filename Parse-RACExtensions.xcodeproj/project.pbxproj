@@ -112,6 +112,7 @@
 
 /* Begin PBXFileReference section */
 		55581C05180050E000A42588 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		55581C0B180050FB00A42588 /* Parse-RACExtensions.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Parse-RACExtensions.podspec"; sourceTree = "<group>"; };
 		55624E4217AAD4E3003ABBB0 /* PFFile+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFFile+RACExtensions.h"; sourceTree = "<group>"; };
 		55624E4317AAD4E3003ABBB0 /* PFFile+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFFile+RACExtensions.m"; sourceTree = "<group>"; };
 		55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFPush+RACExtensions.h"; sourceTree = "<group>"; };
@@ -214,6 +215,7 @@
 				556BB02C177E04D000F9ED05 /* Parse-RACExtensionsTests */,
 				556BB014177E04D000F9ED05 /* Frameworks */,
 				556BB013177E04D000F9ED05 /* Products */,
+				55581C0B180050FB00A42588 /* Parse-RACExtensions.podspec */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
