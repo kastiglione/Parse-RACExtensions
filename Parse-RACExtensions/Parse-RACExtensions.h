@@ -8,7 +8,6 @@
 
 #import "PFAnonymousUtils+RACExtensions.h"
 #import "PFCloud+RACExtensions.h"
-#import "PFFile+RACExtensions.h"
 #import "PFGeoPoint+RACExtensions.h"
 #import "PFPush+RACExtensions.h"
 #import "PFObject+RACExtensions.h"

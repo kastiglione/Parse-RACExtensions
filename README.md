@@ -16,7 +16,6 @@ Currently supports iOS, but I just got started. OS X next.
 
 * [`PFAnonymousUtils`](//github.com/kastiglione/Parse-RACExtensions/blob/master/Parse-RACExtensions/PFAnonymousUtils+RACExtensions.h)
 * [`PFCloud`](//github.com/kastiglione/Parse-RACExtensions/blob/master/Parse-RACExtensions/PFCloud+RACExtensions.h)
-* [`PFFile`](//github.com/kastiglione/Parse-RACExtensions/blob/master/Parse-RACExtensions/PFFile+RACExtensions.h)
 * [`PFGeoPoint`](//github.com/kastiglione/Parse-RACExtensions/blob/master/Parse-RACExtensions/PFGeoPoint+RACExtensions.h)
 * [`PFObject`](//github.com/kastiglione/Parse-RACExtensions/blob/master/Parse-RACExtensions/PFObject+RACExtensions.h)
 * [`PFPush`](//github.com/kastiglione/Parse-RACExtensions/blob/master/Parse-RACExtensions/PFPush+RACExtensions.h)

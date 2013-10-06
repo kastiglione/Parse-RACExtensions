@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55624E4417AAD4E3003ABBB0 /* PFFile+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4217AAD4E3003ABBB0 /* PFFile+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55624E4517AAD4E3003ABBB0 /* PFFile+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55624E4317AAD4E3003ABBB0 /* PFFile+RACExtensions.m */; };
 		55624E4D17AAE626003ABBB0 /* PFPush+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55624E4E17AAE626003ABBB0 /* PFPush+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55624E4C17AAE626003ABBB0 /* PFPush+RACExtensions.m */; };
 		55624E5117B00E66003ABBB0 /* PFCloud+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4F17B00E66003ABBB0 /* PFCloud+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -113,8 +111,6 @@
 /* Begin PBXFileReference section */
 		55581C05180050E000A42588 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		55581C0B180050FB00A42588 /* Parse-RACExtensions.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Parse-RACExtensions.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		55624E4217AAD4E3003ABBB0 /* PFFile+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFFile+RACExtensions.h"; sourceTree = "<group>"; };
-		55624E4317AAD4E3003ABBB0 /* PFFile+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFFile+RACExtensions.m"; sourceTree = "<group>"; };
 		55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFPush+RACExtensions.h"; sourceTree = "<group>"; };
 		55624E4C17AAE626003ABBB0 /* PFPush+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFPush+RACExtensions.m"; sourceTree = "<group>"; };
 		55624E4F17B00E66003ABBB0 /* PFCloud+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFCloud+RACExtensions.h"; sourceTree = "<group>"; };
@@ -180,8 +176,6 @@
 				556BB0A9177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.m */,
 				55624E4F17B00E66003ABBB0 /* PFCloud+RACExtensions.h */,
 				55624E5017B00E66003ABBB0 /* PFCloud+RACExtensions.m */,
-				55624E4217AAD4E3003ABBB0 /* PFFile+RACExtensions.h */,
-				55624E4317AAD4E3003ABBB0 /* PFFile+RACExtensions.m */,
 				556BB0A2177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.h */,
 				556BB0A3177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m */,
 				556BB09D177EA4DE00F9ED05 /* PFObject+RACExtensions.h */,
@@ -304,7 +298,6 @@
 				556BB18B178383A800F9ED05 /* PFUser+RACExtensions.h in Headers */,
 				556BB18C178383AB00F9ED05 /* PFAnonymousUtils+RACExtensions.h in Headers */,
 				556BB18D178383B200F9ED05 /* PFGeoPoint+RACExtensions.h in Headers */,
-				55624E4417AAD4E3003ABBB0 /* PFFile+RACExtensions.h in Headers */,
 				556BB19617838BBE00F9ED05 /* PFRACCallbacks.h in Headers */,
 				55624E4D17AAE626003ABBB0 /* PFPush+RACExtensions.h in Headers */,
 				5564E8621787DE400029B613 /* PFRACErrors.h in Headers */,
@@ -464,7 +457,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55624E4517AAD4E3003ABBB0 /* PFFile+RACExtensions.m in Sources */,
 				556BB098177E9F9700F9ED05 /* PFQuery+RACExtensions.m in Sources */,
 				55624E4E17AAE626003ABBB0 /* PFPush+RACExtensions.m in Sources */,
 				556BB09F177EA4DE00F9ED05 /* PFObject+RACExtensions.m in Sources */,
