@@ -37,6 +37,14 @@
 	setNameWithFormat:@"+rac_fetchAllIfNeeded: %@", objects];
 }
 
++ (RACSignal *)rac_deleteAll:(NSArray *)objects {
+	return [[RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
+		[self deleteAllInBackground:objects block:PFRACBooleanCallback(subscriber)];
+		return nil;
+	}]
+	setNameWithFormat:@"+rac_deleteAll: %@", objects];
+}
+
 - (RACSignal *)rac_save {
 	return [[RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
 		[self saveInBackgroundWithBlock:PFRACBooleanCallback(subscriber)];

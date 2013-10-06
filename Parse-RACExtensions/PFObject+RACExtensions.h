@@ -39,6 +39,14 @@
 /// @return A signal that sends the fetched objects.
 + (RACSignal *)rac_fetchAllIfNeeded:(NSArray *)objects;
 
+/// Deletes a collection of objects all at once.
+///
+/// @see +deleteAllInBackground:block:
+///
+/// @param objects The array of objects to delete.
+/// @return A signal that completes on successful deletion.
++ (RACSignal *)rac_deleteAll:(NSArray *)objects;
+
 /*! Object Data Operations */
 
 /// Saves the PFObject.
