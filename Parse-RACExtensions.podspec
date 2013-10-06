@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Parse-RACExtensions'
   s.requires_arc = true
   s.dependency 'Parse', '~> 1.2.10'
-  s.dependency 'ReactiveCocoa', '~> 1.9.6'
+  s.dependency 'ReactiveCocoa', '~> 2.1'
   s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/Parse"' }
 end
