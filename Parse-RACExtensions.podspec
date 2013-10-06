@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Parse-RACExtensions"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "ReactiveCocoa extensions for Parse."
   s.homepage     = "https://github.com/kastiglione/Parse-RACExtensions"
   s.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
