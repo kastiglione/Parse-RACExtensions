@@ -21,7 +21,7 @@
 			return nil;
 		}]
 		pfrac_useDefaultErrorDescription:NSLocalizedString(@"log in failed", nil)]
-		setNameWithFormat:@"+rac_logInWithUsername: %@ password: %@", username, password]; // Debug builds only
+		setNameWithFormat:@"PFUser +rac_logInWithUsername: %@ password: %@", username, password]; // Debug builds only
 }
 
 + (RACSignal *)rac_requestPasswordResetForEmail:(NSString *)email {
@@ -31,7 +31,7 @@
 			return nil;
 		}]
 		pfrac_useDefaultErrorDescription:NSLocalizedString(@"request password reset failed", nil)]
-		setNameWithFormat:@"+rac_requestPasswordResetForEmail: %@", email];
+		setNameWithFormat:@"PFUser +rac_requestPasswordResetForEmail: %@", email];
 }
 
 - (RACSignal *)rac_signUp {

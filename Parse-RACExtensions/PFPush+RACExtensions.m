@@ -18,7 +18,7 @@
 		[self sendPushMessageToChannelInBackground:channel withMessage:message block:PFRACBooleanCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_sendPushMessageToChannel: %@ withMessage: %@", channel, message];
+	setNameWithFormat:@"PFPush +rac_sendPushMessageToChannel: %@ withMessage: %@", channel, message];
 }
 
 + (RACSignal *)rac_sendPushMessageToQuery:(PFQuery *)query withMessage:(NSString *)message {
@@ -26,7 +26,7 @@
 		[self sendPushMessageToQueryInBackground:query withMessage:message block:PFRACBooleanCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_sendPushMessageToQuery: %@ withMessage: %@", query, message];
+	setNameWithFormat:@"PFPush +rac_sendPushMessageToQuery: %@ withMessage: %@", query, message];
 }
 
 + (RACSignal *)rac_sendPushDataToChannel:(NSString *)channel withData:(NSDictionary *)data {
@@ -34,7 +34,7 @@
 		[self sendPushDataToChannelInBackground:channel withData:data block:PFRACBooleanCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_sendPushDataToChannel: %@ withData: %@", channel, data];
+	setNameWithFormat:@"PFPush +rac_sendPushDataToChannel: %@ withData: %@", channel, data];
 }
 
 + (RACSignal *)rac_sendPushDataToQuery:(PFQuery *)query withData:(NSDictionary *)data {
@@ -42,7 +42,7 @@
 		[self sendPushDataToQueryInBackground:query withData:data block:PFRACBooleanCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_sendPushDataToQuery: %@ withData: %@", query, data];
+	setNameWithFormat:@"PFPush +rac_sendPushDataToQuery: %@ withData: %@", query, data];
 }
 
 + (RACSignal *)rac_getSubscribedChannels {
@@ -50,7 +50,7 @@
 		[self getSubscribedChannelsInBackgroundWithBlock:PFRACObjectCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_getSubscribedChannels"];
+	setNameWithFormat:@"PFPush +rac_getSubscribedChannels"];
 }
 
 + (RACSignal *)rac_subscribeToChannel:(NSString *)channel {
@@ -58,7 +58,7 @@
 		[self subscribeToChannelInBackground:channel block:PFRACBooleanCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_subscribeToChannel: %@", channel];
+	setNameWithFormat:@"PFPush +rac_subscribeToChannel: %@", channel];
 }
 
 + (RACSignal *)rac_unsubscribeFromChannel:(NSString *)channel {
@@ -66,7 +66,7 @@
 		[self unsubscribeFromChannelInBackground:channel block:PFRACBooleanCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_unsubscribeFromChannel: %@", channel];
+	setNameWithFormat:@"PFPush +rac_unsubscribeFromChannel: %@", channel];
 }
 
 - (RACSignal *)rac_sendPush {

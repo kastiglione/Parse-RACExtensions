@@ -18,7 +18,7 @@
 		[self saveAllInBackground:objects block:PFRACBooleanCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_saveAll: %@", objects];
+	setNameWithFormat:@"PFObject +rac_saveAll: %@", objects];
 }
 
 + (RACSignal *)rac_fetchAll:(NSArray *)objects {
@@ -26,7 +26,7 @@
 		[self fetchAllInBackground:objects block:PFRACObjectCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_fetchAll: %@", objects];
+	setNameWithFormat:@"PFObject +rac_fetchAll: %@", objects];
 }
 
 + (RACSignal *)rac_fetchAllIfNeeded:(NSArray *)objects {
@@ -34,7 +34,7 @@
 		[self fetchAllIfNeededInBackground:objects block:PFRACObjectCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_fetchAllIfNeeded: %@", objects];
+	setNameWithFormat:@"PFObject +rac_fetchAllIfNeeded: %@", objects];
 }
 
 + (RACSignal *)rac_deleteAll:(NSArray *)objects {
@@ -42,7 +42,7 @@
 		[self deleteAllInBackground:objects block:PFRACBooleanCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_deleteAll: %@", objects];
+	setNameWithFormat:@"PFObject +rac_deleteAll: %@", objects];
 }
 
 - (RACSignal *)rac_save {

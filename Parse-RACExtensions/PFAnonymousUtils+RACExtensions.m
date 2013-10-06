@@ -18,7 +18,7 @@
 		[self logInWithBlock:PFRACObjectCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_logIn"];
+	setNameWithFormat:@"PFAnonymousUtils +rac_logIn"];
 }
 
 @end

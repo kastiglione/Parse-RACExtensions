@@ -18,7 +18,7 @@
 		[self geoPointForCurrentLocationInBackground:PFRACObjectCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_geoPointForCurrentLocation"];
+	setNameWithFormat:@"PFGeoPoint +rac_geoPointForCurrentLocation"];
 }
 
 @end

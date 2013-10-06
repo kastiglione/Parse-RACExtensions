@@ -18,7 +18,7 @@
 		[self callFunctionInBackground:function withParameters:parameters block:PFRACObjectCallback(subscriber)];
 		return nil;
 	}]
-	setNameWithFormat:@"+rac_callFunction: %@ withParameters: %@", function, parameters];
+	setNameWithFormat:@"PFCloud +rac_callFunction: %@ withParameters: %@", function, parameters];
 }
 
 @end
