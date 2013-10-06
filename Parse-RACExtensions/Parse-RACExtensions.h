@@ -6,8 +6,6 @@
 //  Copyright (c) 2013 Dave Lee. All rights reserved.
 //
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
-
 #import "PFAnonymousUtils+RACExtensions.h"
 #import "PFCloud+RACExtensions.h"
 #import "PFFile+RACExtensions.h"
