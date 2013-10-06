@@ -77,7 +77,7 @@
 
 /// Refreshes the PFObject with the current data from the server.
 ///
-/// @see -fetchInBackgroundWithBlock:
+/// @see -refreshInBackgroundWithBlock:
 ///
 /// @return A signal that sends the refreshed object.
 - (RACSignal *)rac_refresh;
