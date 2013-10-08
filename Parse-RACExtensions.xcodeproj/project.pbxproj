@@ -19,7 +19,6 @@
 		556BB028177E04D000F9ED05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB015177E04D000F9ED05 /* Foundation.framework */; };
 		556BB02B177E04D000F9ED05 /* libParse-RACExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB012177E04D000F9ED05 /* libParse-RACExtensions.a */; };
 		556BB031177E04D000F9ED05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556BB02F177E04D000F9ED05 /* InfoPlist.strings */; };
-		556BB034177E04D000F9ED05 /* Parse_RACExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB033177E04D000F9ED05 /* Parse_RACExtensionsTests.m */; };
 		556BB093177E9DB800F9ED05 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB088177E986D00F9ED05 /* libReactiveCocoa-iOS.a */; };
 		556BB095177E9EBE00F9ED05 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB094177E9EBE00F9ED05 /* Parse.framework */; };
 		556BB098177E9F9700F9ED05 /* PFQuery+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB097177E9F9700F9ED05 /* PFQuery+RACExtensions.m */; };
@@ -125,8 +124,6 @@
 		556BB026177E04D000F9ED05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		556BB02E177E04D000F9ED05 /* Parse-RACExtensionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Parse-RACExtensionsTests-Info.plist"; sourceTree = "<group>"; };
 		556BB030177E04D000F9ED05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		556BB032177E04D000F9ED05 /* Parse_RACExtensionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Parse_RACExtensionsTests.h; sourceTree = "<group>"; };
-		556BB033177E04D000F9ED05 /* Parse_RACExtensionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Parse_RACExtensionsTests.m; sourceTree = "<group>"; };
 		556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = external/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 		556BB094177E9EBE00F9ED05 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		556BB096177E9F9700F9ED05 /* PFQuery+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "PFQuery+RACExtensions.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -257,8 +254,6 @@
 		556BB02C177E04D000F9ED05 /* Parse-RACExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				556BB032177E04D000F9ED05 /* Parse_RACExtensionsTests.h */,
-				556BB033177E04D000F9ED05 /* Parse_RACExtensionsTests.m */,
 				556BB02D177E04D000F9ED05 /* Supporting Files */,
 			);
 			path = "Parse-RACExtensionsTests";
@@ -473,7 +468,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556BB034177E04D000F9ED05 /* Parse_RACExtensionsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
