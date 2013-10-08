@@ -25,22 +25,20 @@ afterAll(^{
 	[PFObject deleteAll:testObjects];
 });
 
-it(@"should save", ^{
+it(@"should save", ^AsyncBlock {
 	PFObject *object = [PFObject objectWithClassName:@"TestObject"];
 	expect(object).notTo.beNil();
 
-	__block BOOL saved = NO;
 	[[object rac_save] subscribeCompleted:^{
-		saved = YES;
-	}];
+		expect(object.objectId).notTo.beNil();
+		expect(object.createdAt.timeIntervalSinceReferenceDate).to.beCloseToWithin(NSDate.date.timeIntervalSinceReferenceDate, 100);
+		expect(object.updatedAt).to.equal(object.createdAt);
 
-	expect(saved).will.beTruthy();
-	expect(object.objectId).willNot.beNil();
-	expect(object.createdAt.timeIntervalSinceReferenceDate).will.beCloseToWithin(NSDate.date.timeIntervalSinceReferenceDate, 300);
-	expect(object.updatedAt).will.equal(object.createdAt);
+		done();
+	}];
 });
 
-it(@"should delete", ^{
+it(@"should delete", ^AsyncBlock {
 	PFObject *object = [PFObject objectWithClassName:@"TestObject"];
 	expect(object).notTo.beNil();
 
@@ -49,17 +47,15 @@ it(@"should delete", ^{
 	expect(saved).to.beTruthy();
 	expect(object.objectId).notTo.beNil();
 
-	__block BOOL deleted = NO;
 	[[object rac_delete] subscribeCompleted:^{
-		deleted = YES;
+		expect(object.objectId).notTo.beNil();
 
 		PFQuery *query = [PFQuery queryWithClassName:@"TestObject"];
 		[query whereKey:@"objectId" equalTo:object.objectId];
 		expect([query countObjects]).to.equal(0);
-	}];
 
-	expect(deleted).will.beTruthy();
-	expect(object.objectId).willNot.beNil();
+		done();
+	}];
 });
 
 SpecEnd
