@@ -94,3 +94,7 @@
 }
 
 @end
+
+@implementation PFObject (DeprecatedRACExtensions)
+
+@end

@@ -104,3 +104,7 @@
 - (RACSignal *)rac_delete;
 
 @end
+
+@interface PFObject (DeprecatedRACExtensions)
+
+@end
