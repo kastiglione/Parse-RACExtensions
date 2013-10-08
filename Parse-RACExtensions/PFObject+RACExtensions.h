@@ -75,13 +75,6 @@
 /// @see -saveEventually:
 - (RACSignal *)rac_saveEventually;
 
-/// Refreshes the PFObject with the current data from the server.
-///
-/// @see -refreshInBackgroundWithBlock:
-///
-/// @return A signal that sends the refreshed object.
-- (RACSignal *)rac_refresh;
-
 /// Fetches the PFObject.
 ///
 /// @see -fetchInBackgroundWithBlock:
@@ -106,5 +99,7 @@
 @end
 
 @interface PFObject (DeprecatedRACExtensions)
+
+- (RACSignal *)rac_refresh __attribute__((deprecated("Underlying `-refreshInBackgroundWithBlock:` is deprecated")));
 
 @end

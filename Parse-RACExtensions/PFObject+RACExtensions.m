@@ -61,14 +61,6 @@
 	setNameWithFormat:@"%@ -rac_saveEventually", self];
 }
 
-- (RACSignal *)rac_refresh {
-	return [[RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
-		[self refreshInBackgroundWithBlock:PFRACObjectCallback(subscriber)];
-		return nil;
-	}]
-	setNameWithFormat:@"%@ -rac_refresh", self];
-}
-
 - (RACSignal *)rac_fetch {
 	return [[RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
 		[self fetchInBackgroundWithBlock:PFRACObjectCallback(subscriber)];
@@ -96,5 +88,13 @@
 @end
 
 @implementation PFObject (DeprecatedRACExtensions)
+
+- (RACSignal *)rac_refresh {
+	return [[RACSignal createSignal:^RACDisposable * (id<RACSubscriber> subscriber) {
+		[self refreshInBackgroundWithBlock:PFRACObjectCallback(subscriber)];
+		return nil;
+	}]
+	setNameWithFormat:@"%@ -rac_refresh", self];
+}
 
 @end
