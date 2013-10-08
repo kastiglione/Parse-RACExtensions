@@ -58,4 +58,22 @@ it(@"should delete", ^AsyncBlock {
 	}];
 });
 
+it(@"should fetch", ^AsyncBlock {
+	PFObject *object = [PFObject objectWithClassName:@"TestObject"];
+	expect(object).notTo.beNil();
+
+	object[@"random"] = @(arc4random());
+	BOOL saved = [object save];
+
+	expect(saved).to.beTruthy();
+	expect(object.objectId).notTo.beNil();
+
+	PFObject *blank = [PFObject objectWithoutDataWithClassName:@"TestObject" objectId:object.objectId];
+	[[blank rac_fetch] subscribeNext:^(PFObject *x) {
+		expect([x dictionaryWithValuesForKeys:object.allKeys]).to.equal([object dictionaryWithValuesForKeys:object.allKeys]);
+
+		done();
+	}];
+});
+
 SpecEnd
