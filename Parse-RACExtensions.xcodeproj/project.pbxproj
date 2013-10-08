@@ -41,6 +41,7 @@
 		556BB19617838BBE00F9ED05 /* PFRACCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB1921783856D00F9ED05 /* PFRACCallbacks.h */; };
 		557F482A18044B3400E1C168 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F482918044B3400E1C168 /* libSpecta-iOS.a */; };
 		557F483118044B3800E1C168 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483018044B3800E1C168 /* libExpecta-iOS.a */; };
+		557F483418044B5700E1C168 /* PFObjectRACSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 557F483318044B5700E1C168 /* PFObjectRACSpec.m */; };
 		557F483518044CFD00E1C168 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB094177E9EBE00F9ED05 /* Parse.framework */; };
 		557F483718044E8F00E1C168 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483618044E8F00E1C168 /* AudioToolbox.framework */; };
 		557F483918044E9A00E1C168 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483818044E9A00E1C168 /* MobileCoreServices.framework */; };
@@ -159,6 +160,7 @@
 		556BB1931783856D00F9ED05 /* PFRACCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRACCallbacks.m; sourceTree = "<group>"; };
 		557F482918044B3400E1C168 /* libSpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-iOS.a"; path = "external/ReactiveCocoa/external/specta/build/Debug-iphoneos/libSpecta-iOS.a"; sourceTree = "<group>"; };
 		557F483018044B3800E1C168 /* libExpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-iOS.a"; path = "external/ReactiveCocoa/external/expecta/build/Debug-iphoneos/libExpecta-iOS.a"; sourceTree = "<group>"; };
+		557F483318044B5700E1C168 /* PFObjectRACSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFObjectRACSpec.m; sourceTree = "<group>"; };
 		557F483618044E8F00E1C168 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		557F483818044E9A00E1C168 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		557F483A18044EAB00E1C168 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -304,6 +306,7 @@
 		556BB02C177E04D000F9ED05 /* Parse-RACExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
+				557F483318044B5700E1C168 /* PFObjectRACSpec.m */,
 				556BB02D177E04D000F9ED05 /* Supporting Files */,
 			);
 			path = "Parse-RACExtensionsTests";
@@ -518,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557F483418044B5700E1C168 /* PFObjectRACSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
