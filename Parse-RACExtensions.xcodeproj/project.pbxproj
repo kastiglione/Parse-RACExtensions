@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552E25D718044F010098D6C4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E25D618044F010098D6C4 /* SystemConfiguration.framework */; };
+		552E25DE18044F2E0098D6C4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E25DD18044F2E0098D6C4 /* Security.framework */; };
+		552E25E0180468930098D6C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E25DF180468930098D6C4 /* QuartzCore.framework */; };
+		552E25E2180468A00098D6C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E25E1180468A00098D6C4 /* CoreGraphics.framework */; };
+		552E25E4180468F30098D6C4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E25E3180468F30098D6C4 /* StoreKit.framework */; };
 		552E25E618046A340098D6C4 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E25E518046A340098D6C4 /* FacebookSDK.framework */; };
 		55624E4D17AAE626003ABBB0 /* PFPush+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55624E4E17AAE626003ABBB0 /* PFPush+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55624E4C17AAE626003ABBB0 /* PFPush+RACExtensions.m */; };
@@ -34,6 +39,13 @@
 		556BB18D178383B200F9ED05 /* PFGeoPoint+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB0A2177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		556BB1951783856D00F9ED05 /* PFRACCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB1931783856D00F9ED05 /* PFRACCallbacks.m */; };
 		556BB19617838BBE00F9ED05 /* PFRACCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 556BB1921783856D00F9ED05 /* PFRACCallbacks.h */; };
+		557F482A18044B3400E1C168 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F482918044B3400E1C168 /* libSpecta-iOS.a */; };
+		557F483118044B3800E1C168 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483018044B3800E1C168 /* libExpecta-iOS.a */; };
+		557F483518044CFD00E1C168 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB094177E9EBE00F9ED05 /* Parse.framework */; };
+		557F483718044E8F00E1C168 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483618044E8F00E1C168 /* AudioToolbox.framework */; };
+		557F483918044E9A00E1C168 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483818044E9A00E1C168 /* MobileCoreServices.framework */; };
+		557F483B18044EAB00E1C168 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483A18044EAB00E1C168 /* CFNetwork.framework */; };
+		557F483D18044EBB00E1C168 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483C18044EBB00E1C168 /* CoreLocation.framework */; };
 		B87AE4BF17A8005200F5A308 /* Parse-RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B87AE4BD17A8005200F5A308 /* Parse-RACExtensions.h */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +121,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		552E25D618044F010098D6C4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		552E25DD18044F2E0098D6C4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		552E25DF180468930098D6C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		552E25E1180468A00098D6C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		552E25E3180468F30098D6C4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		552E25E518046A340098D6C4 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		55581C05180050E000A42588 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		55581C0B180050FB00A42588 /* Parse-RACExtensions.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Parse-RACExtensions.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -140,6 +157,12 @@
 		556BB0A9177EB0FB00F9ED05 /* PFAnonymousUtils+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFAnonymousUtils+RACExtensions.m"; sourceTree = "<group>"; };
 		556BB1921783856D00F9ED05 /* PFRACCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFRACCallbacks.h; sourceTree = "<group>"; };
 		556BB1931783856D00F9ED05 /* PFRACCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFRACCallbacks.m; sourceTree = "<group>"; };
+		557F482918044B3400E1C168 /* libSpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libSpecta-iOS.a"; path = "external/ReactiveCocoa/external/specta/build/Debug-iphoneos/libSpecta-iOS.a"; sourceTree = "<group>"; };
+		557F483018044B3800E1C168 /* libExpecta-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-iOS.a"; path = "external/ReactiveCocoa/external/expecta/build/Debug-iphoneos/libExpecta-iOS.a"; sourceTree = "<group>"; };
+		557F483618044E8F00E1C168 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		557F483818044E9A00E1C168 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		557F483A18044EAB00E1C168 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		557F483C18044EBB00E1C168 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B87AE4BD17A8005200F5A308 /* Parse-RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Parse-RACExtensions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,10 +181,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552E25E4180468F30098D6C4 /* StoreKit.framework in Frameworks */,
+				552E25E2180468A00098D6C4 /* CoreGraphics.framework in Frameworks */,
+				552E25E0180468930098D6C4 /* QuartzCore.framework in Frameworks */,
+				552E25DE18044F2E0098D6C4 /* Security.framework in Frameworks */,
+				552E25D718044F010098D6C4 /* SystemConfiguration.framework in Frameworks */,
+				557F483D18044EBB00E1C168 /* CoreLocation.framework in Frameworks */,
+				557F483B18044EAB00E1C168 /* CFNetwork.framework in Frameworks */,
+				557F483918044E9A00E1C168 /* MobileCoreServices.framework in Frameworks */,
+				557F483718044E8F00E1C168 /* AudioToolbox.framework in Frameworks */,
+				557F483118044B3800E1C168 /* libExpecta-iOS.a in Frameworks */,
+				557F482A18044B3400E1C168 /* libSpecta-iOS.a in Frameworks */,
 				556BB025177E04D000F9ED05 /* SenTestingKit.framework in Frameworks */,
 				556BB027177E04D000F9ED05 /* UIKit.framework in Frameworks */,
 				556BB028177E04D000F9ED05 /* Foundation.framework in Frameworks */,
 				556BB02B177E04D000F9ED05 /* libParse-RACExtensions.a in Frameworks */,
+				557F483518044CFD00E1C168 /* Parse.framework in Frameworks */,
 				552E25E618046A340098D6C4 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,12 +261,23 @@
 		556BB014177E04D000F9ED05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */,
-				556BB094177E9EBE00F9ED05 /* Parse.framework */,
+				557F483618044E8F00E1C168 /* AudioToolbox.framework */,
+				557F483A18044EAB00E1C168 /* CFNetwork.framework */,
+				552E25E1180468A00098D6C4 /* CoreGraphics.framework */,
+				557F483C18044EBB00E1C168 /* CoreLocation.framework */,
 				556BB015177E04D000F9ED05 /* Foundation.framework */,
+				557F483818044E9A00E1C168 /* MobileCoreServices.framework */,
+				552E25DF180468930098D6C4 /* QuartzCore.framework */,
+				552E25DD18044F2E0098D6C4 /* Security.framework */,
 				556BB024177E04D000F9ED05 /* SenTestingKit.framework */,
+				552E25E3180468F30098D6C4 /* StoreKit.framework */,
+				552E25D618044F010098D6C4 /* SystemConfiguration.framework */,
 				556BB026177E04D000F9ED05 /* UIKit.framework */,
+				556BB094177E9EBE00F9ED05 /* Parse.framework */,
 				552E25E518046A340098D6C4 /* FacebookSDK.framework */,
+				556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */,
+				557F483018044B3800E1C168 /* libExpecta-iOS.a */,
+				557F482918044B3400E1C168 /* libSpecta-iOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -595,9 +641,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Parse-RACExtensionsTests/Parse-RACExtensionsTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\" \"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -608,9 +657,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Parse-RACExtensionsTests/Parse-RACExtensionsTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/External/ReactiveCocoa/external/specta/src\" \"$(PROJECT_DIR)/External/ReactiveCocoa/external/expecta/src\"/**";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
