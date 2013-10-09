@@ -69,8 +69,11 @@ it(@"should fetch", ^AsyncBlock {
 	expect(object.objectId).notTo.beNil();
 
 	PFObject *blank = [PFObject objectWithoutDataWithClassName:@"TestObject" objectId:object.objectId];
-	[[blank rac_fetch] subscribeNext:^(PFObject *x) {
-		expect([x dictionaryWithValuesForKeys:object.allKeys]).to.equal([object dictionaryWithValuesForKeys:object.allKeys]);
+	[[blank rac_fetch] subscribeNext:^(PFObject *fetched) {
+		// Compare by dictionary of properties because PFObject -isEqual: uses identity.
+		NSDictionary *objectProperties = [object dictionaryWithValuesForKeys:object.allKeys];
+		NSDictionary *fetchedProperties = [fetched dictionaryWithValuesForKeys:object.allKeys];
+		expect(fetchedProperties).to.equal(objectProperties);
 
 		done();
 	}];
