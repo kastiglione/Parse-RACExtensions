@@ -26,7 +26,21 @@
 
 - (RACSignal *)rac_findObjects {
 	return [[RACSignal createSignal:^(id<RACSubscriber> subscriber) {
-		[self findObjectsInBackgroundWithBlock:PFRACObjectCallback(subscriber)];
+		// With a cache policy of kPFCachePolicyCacheThenNetwork, the callback
+		// is called twice, first with results from cache, second with fresh
+		// results. When there are no cached results, the API returns an error,
+		// with code kPFErrorCacheMiss. For these purposes, it's not an error
+		// that should end subscription, so it is squelched.
+		//
+		// This may be true of the other methods within this cateogry.
+		__block NSUInteger callbackNumber = 0;
+		[self findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+			if (self.cachePolicy == kPFCachePolicyCacheThenNetwork && ++callbackNumber == 1) {
+				if (error.code == kPFErrorCacheMiss && [error.domain isEqualToString:@"Parse"]) return;
+			}
+
+			PFRACObjectCallback(subscriber)(objects, error);
+		}];
 
 		return [RACDisposable disposableWithBlock:^{
 			[self cancel];
