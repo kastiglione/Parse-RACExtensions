@@ -32,7 +32,7 @@
 		// with code kPFErrorCacheMiss. For these purposes, it's not an error
 		// that should end subscription, so it is squelched.
 		//
-		// This may be true of the other methods within this cateogry.
+		// This may be true of the other methods within this category.
 		__block NSUInteger callbackNumber = 0;
 		[self findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
 			if (self.cachePolicy == kPFCachePolicyCacheThenNetwork && ++callbackNumber == 1) {
