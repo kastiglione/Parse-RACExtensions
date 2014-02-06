@@ -49,6 +49,7 @@
 		557F483D18044EBB00E1C168 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483C18044EBB00E1C168 /* CoreLocation.framework */; };
 		B86FA33E189762D700495E24 /* PFFile+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B86FA33C189762D700495E24 /* PFFile+RACExtensions.h */; };
 		B86FA33F189762D700495E24 /* PFFile+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B86FA33D189762D700495E24 /* PFFile+RACExtensions.m */; };
+		B86FA34F18A3398E00495E24 /* PFFileRACSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B86FA34E18A3398E00495E24 /* PFFileRACSpec.m */; };
 		B87AE4BF17A8005200F5A308 /* Parse-RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B87AE4BD17A8005200F5A308 /* Parse-RACExtensions.h */; };
 /* End PBXBuildFile section */
 
@@ -176,6 +177,7 @@
 		557F483C18044EBB00E1C168 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B86FA33C189762D700495E24 /* PFFile+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFFile+RACExtensions.h"; sourceTree = "<group>"; };
 		B86FA33D189762D700495E24 /* PFFile+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFFile+RACExtensions.m"; sourceTree = "<group>"; };
+		B86FA34E18A3398E00495E24 /* PFFileRACSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFFileRACSpec.m; sourceTree = "<group>"; };
 		B87AE4BD17A8005200F5A308 /* Parse-RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Parse-RACExtensions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,6 +321,7 @@
 		556BB02C177E04D000F9ED05 /* Parse-RACExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
+				B86FA34E18A3398E00495E24 /* PFFileRACSpec.m */,
 				557F483318044B5700E1C168 /* PFObjectRACSpec.m */,
 				556BB02D177E04D000F9ED05 /* Supporting Files */,
 			);
@@ -545,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				557F483418044B5700E1C168 /* PFObjectRACSpec.m in Sources */,
+				B86FA34F18A3398E00495E24 /* PFFileRACSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
