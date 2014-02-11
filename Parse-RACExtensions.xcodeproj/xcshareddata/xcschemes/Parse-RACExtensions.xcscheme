@@ -25,7 +25,7 @@
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldUseLaunchSchemeArgsEnv = "NO"
       buildConfiguration = "Debug">
       <Testables>
          <TestableReference
@@ -39,6 +39,18 @@
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "ParseClientKey"
+            value = "xxx"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "ParseApplicationId"
+            value = "xxx"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
