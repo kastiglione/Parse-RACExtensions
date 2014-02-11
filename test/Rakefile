@@ -1,0 +1,26 @@
+require 'parse-ruby-client'
+
+task :client do
+	Parse.init	:application_id => ENV['PARSE_APP_ID'],
+				:api_key => ENV['PARSE_REST_KEY']
+end
+
+task :setup => :client do
+	20.times do
+		profile = Parse::Object.new("Profile")
+
+		signature = Parse::File.new({
+		  :body => "Regards, Bob",
+		  :local_filename => "sig.txt",
+		  :content_type => "text/plain"
+		})
+		signature.save
+
+		profile["signature"] = signature
+		profile.save
+	end
+end
+
+task :teardown => :client do
+	Parse::Query.new("Profile").get.map!(&:parse_delete)
+end

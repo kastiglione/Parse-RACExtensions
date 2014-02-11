@@ -1,0 +1,26 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    iron_core (1.0.3)
+      rest (>= 2.6.4)
+    iron_mq (4.1.0)
+      iron_core (>= 0.5.1)
+    net-http-persistent (2.9.4)
+    netrc (0.7.7)
+    parse-ruby-client (0.2.0)
+      iron_mq
+      patron
+    patron (0.4.18)
+    rake (10.1.0)
+    rest (2.7.1)
+      net-http-persistent (>= 2.9.1)
+      rest_client (>= 1.7.1)
+    rest_client (1.7.2)
+      netrc (~> 0.7.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  parse-ruby-client
+  rake
