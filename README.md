@@ -21,5 +21,11 @@ Currently supports iOS, but I just got started. OS X next.
 * [`PFPush`](//github.com/kastiglione/Parse-RACExtensions/blob/master/Parse-RACExtensions/PFPush+RACExtensions.h)
 * [`PFQuery`](//github.com/kastiglione/Parse-RACExtensions/blob/master/Parse-RACExtensions/PFQuery+RACExtensions.h)
 * [`PFUser`](//github.com/kastiglione/Parse-RACExtensions/blob/master/Parse-RACExtensions/PFUser+RACExtensions.h)
+* [`PFFile`](//github.com/kastiglione/Parse-RACExtensions/blob/master/Parse-RACExtensions/PFFile+RACExtensions.h)
 
 Pull requests welcome!
+
+## Unit Tests
+Prior to running unit tests, set the `ParseApplicationId` and `ParseClientKey` environment variables in the Test target of the Parse-RACExtensions scheme.
+
+See the [PFFile testing readme](test/pffile_testing.md) for requirements on running the PFFile tests.
