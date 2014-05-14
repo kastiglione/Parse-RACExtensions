@@ -12,7 +12,6 @@
 		552E25E0180468930098D6C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E25DF180468930098D6C4 /* QuartzCore.framework */; };
 		552E25E2180468A00098D6C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E25E1180468A00098D6C4 /* CoreGraphics.framework */; };
 		552E25E4180468F30098D6C4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E25E3180468F30098D6C4 /* StoreKit.framework */; };
-		552E25E618046A340098D6C4 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 552E25E518046A340098D6C4 /* FacebookSDK.framework */; };
 		55624E4D17AAE626003ABBB0 /* PFPush+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		55624E4E17AAE626003ABBB0 /* PFPush+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 55624E4C17AAE626003ABBB0 /* PFPush+RACExtensions.m */; };
 		55624E5117B00E66003ABBB0 /* PFCloud+RACExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624E4F17B00E66003ABBB0 /* PFCloud+RACExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -125,7 +124,6 @@
 		552E25DF180468930098D6C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		552E25E1180468A00098D6C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		552E25E3180468F30098D6C4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		552E25E518046A340098D6C4 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		55581C05180050E000A42588 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		55581C0B180050FB00A42588 /* Parse-RACExtensions.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Parse-RACExtensions.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		55624E4B17AAE626003ABBB0 /* PFPush+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFPush+RACExtensions.h"; sourceTree = "<group>"; };
@@ -194,7 +192,6 @@
 				556BB027177E04D000F9ED05 /* UIKit.framework in Frameworks */,
 				556BB028177E04D000F9ED05 /* Foundation.framework in Frameworks */,
 				556BB02B177E04D000F9ED05 /* libParse-RACExtensions.a in Frameworks */,
-				552E25E618046A340098D6C4 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +267,6 @@
 				552E25E3180468F30098D6C4 /* StoreKit.framework */,
 				552E25D618044F010098D6C4 /* SystemConfiguration.framework */,
 				556BB026177E04D000F9ED05 /* UIKit.framework */,
-				552E25E518046A340098D6C4 /* FacebookSDK.framework */,
 				556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */,
 				557F483018044B3800E1C168 /* libExpecta-iOS.a */,
 				557F482918044B3400E1C168 /* libSpecta-iOS.a */,
