@@ -26,7 +26,6 @@
 		556BB02B177E04D000F9ED05 /* libParse-RACExtensions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB012177E04D000F9ED05 /* libParse-RACExtensions.a */; };
 		556BB031177E04D000F9ED05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 556BB02F177E04D000F9ED05 /* InfoPlist.strings */; };
 		556BB093177E9DB800F9ED05 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB088177E986D00F9ED05 /* libReactiveCocoa-iOS.a */; };
-		556BB095177E9EBE00F9ED05 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB094177E9EBE00F9ED05 /* Parse.framework */; };
 		556BB098177E9F9700F9ED05 /* PFQuery+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB097177E9F9700F9ED05 /* PFQuery+RACExtensions.m */; };
 		556BB09F177EA4DE00F9ED05 /* PFObject+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB09E177EA4DE00F9ED05 /* PFObject+RACExtensions.m */; };
 		556BB0A4177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 556BB0A3177EAC7C00F9ED05 /* PFGeoPoint+RACExtensions.m */; };
@@ -42,7 +41,6 @@
 		557F482A18044B3400E1C168 /* libSpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F482918044B3400E1C168 /* libSpecta-iOS.a */; };
 		557F483118044B3800E1C168 /* libExpecta-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483018044B3800E1C168 /* libExpecta-iOS.a */; };
 		557F483418044B5700E1C168 /* PFObjectRACSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 557F483318044B5700E1C168 /* PFObjectRACSpec.m */; };
-		557F483518044CFD00E1C168 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556BB094177E9EBE00F9ED05 /* Parse.framework */; };
 		557F483718044E8F00E1C168 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483618044E8F00E1C168 /* AudioToolbox.framework */; };
 		557F483918044E9A00E1C168 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483818044E9A00E1C168 /* MobileCoreServices.framework */; };
 		557F483B18044EAB00E1C168 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557F483A18044EAB00E1C168 /* CFNetwork.framework */; };
@@ -145,7 +143,6 @@
 		556BB02E177E04D000F9ED05 /* Parse-RACExtensionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Parse-RACExtensionsTests-Info.plist"; sourceTree = "<group>"; };
 		556BB030177E04D000F9ED05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = external/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
-		556BB094177E9EBE00F9ED05 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		556BB096177E9F9700F9ED05 /* PFQuery+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "PFQuery+RACExtensions.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		556BB097177E9F9700F9ED05 /* PFQuery+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "PFQuery+RACExtensions.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		556BB09D177EA4DE00F9ED05 /* PFObject+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFObject+RACExtensions.h"; sourceTree = "<group>"; };
@@ -175,7 +172,6 @@
 			files = (
 				556BB093177E9DB800F9ED05 /* libReactiveCocoa-iOS.a in Frameworks */,
 				556BB016177E04D000F9ED05 /* Foundation.framework in Frameworks */,
-				556BB095177E9EBE00F9ED05 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +194,6 @@
 				556BB027177E04D000F9ED05 /* UIKit.framework in Frameworks */,
 				556BB028177E04D000F9ED05 /* Foundation.framework in Frameworks */,
 				556BB02B177E04D000F9ED05 /* libParse-RACExtensions.a in Frameworks */,
-				557F483518044CFD00E1C168 /* Parse.framework in Frameworks */,
 				552E25E618046A340098D6C4 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +270,6 @@
 				552E25E3180468F30098D6C4 /* StoreKit.framework */,
 				552E25D618044F010098D6C4 /* SystemConfiguration.framework */,
 				556BB026177E04D000F9ED05 /* UIKit.framework */,
-				556BB094177E9EBE00F9ED05 /* Parse.framework */,
 				552E25E518046A340098D6C4 /* FacebookSDK.framework */,
 				556BB07A177E986C00F9ED05 /* ReactiveCocoa.xcodeproj */,
 				557F483018044B3800E1C168 /* libExpecta-iOS.a */,
